@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MTG Decklist Image Generator - Avatar TLA</title>
+    <style>
+        :root {
+            --bg-color: #2c2c2c;
+            --panel-color: #3e3e3e;
+            --text-color: #e0e0e0;
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        h1 { margin-bottom: 20px; font-size: 1.5rem; }
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            width: 100%;
+            max-width: 1200px;
+        }
+        .input-panel {
+            flex: 1;
+            min-width: 340px;
+            background: var(--panel-color);
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+        .output-panel {
+            flex: 2;
+            min-width: 320px;
+            background: #1a1a1a;
+            padding: 20px;
+            border-radius: 8px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+            overflow: auto;
+            min-height: 500px;
+        }
+        .section-title {
+            font-weight: bold;
+            font-size: 1rem;
+            margin-bottom: 8px;
+        }
+        textarea {
+            width: 100%;
+            height: 250px;
+            background: #222;
+            color: #fff;
+            border: 1px solid #555;
+            border-radius: 4px;
+            padding: 8px;
+            font-family: monospace;
+            resize: vertical;
+        }
+        button#generate-btn {
+            color: white;
+            border: none;
+            padding: 0;
+            border-radius: 50%;
+            width: 80px;
+            height: 80px;
+            cursor: pointer;
+            align-self: center;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.5);
+            transition: transform 0.1s;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 10px;
+        }
+        button#generate-btn:hover { transform: scale(1.05); }
+        button#generate-btn:active { transform: scale(0.95); }
+        button#generate-btn img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 50%;
+        }
+        canvas {
+            max-width: 100%;
+            height: auto;
+            box-shadow: 0 0 20px rgba(0,0,0,0.5);
+        }
+        .status-text {
+            font-size: 0.9rem;
+            color: #aaa;
+            margin-top: 10px;
+            text-align: center;
+            min-height: 1.2em;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>MTG Decklist Generator</h1>
+
+    <div class="container">
+        <!-- Input Area -->
+        <div class="input-panel">
+            <div>
+                <div class="section-title">デッキリスト</div>
+                <textarea id="deck-input" placeholder="カード名　(コスト)　×1&#13;&#10;（Arenaのエクスポート形式など）"></textarea>
+            </div>
+
+            <button id="generate-btn" title="画像を生成">
+                <img src="mm_wk19_299_t3.jpg" alt="画像を生成">
+            </button>
+            <div class="status-text" id="status-message"></div>
+        </div>
+
+        <!-- Output Area -->
+        <div class="output-panel">
+            <canvas id="deck-canvas"></canvas>
+            <div style="margin-top:10px; color:#888; font-size:0.9rem;">
+                生成された画像は右クリック（または長押し）で保存できます
+            </div>
+        </div>
+    </div>
+
+<script src="gamedata.js"></script>
+<script>
+    // =================================================================
+    // == 完全版スクリプト ==
+    // =================================================================
+
+    // --- 1. 定数定義 ---
+    const canvas = document.getElementById('deck-canvas');
+    const ctx = canvas.getContext('2d');
+    const CARD_W = 200;
+    const CARD_H = 280;
+    const GAP = 10;
+    const COL_COUNT = 7;
+    const PADDING = 20;
+    const HEADER_HEIGHT = 60;
+    const COUNT_COL_WIDTH = 60;
+    const COLORS = { 'W':'#F8F8F6', 'U':'#C2D7E9', 'B':'#BAB1AB', 'R':'#E49977', 'G':'#9BD3AE', 'M':'#DCD6AC', 'C':'#D3D3D3', 'L':'#C7C2BC' };
+    const tierOrder = {
+        'A+': 13, 'A': 12, 'A-': 11, 'B+': 10, 'B': 9,  'B-': 8,
+        'C+': 7,  'C': 6,  'C-': 5,  'D+': 4,  'D': 3,  'D-': 2,
+        'F':  1,  'U': 0
+    };
+    const jpToEnMap = new Map(Object.entries(MASTER_CARD_DATA).map(([en, data]) => [data.jp.toLowerCase(), en]));
+    const masterCardEntries = Object.entries(MASTER_CARD_DATA);
+
+    // --- 2. ヘルパー関数群 ---
+
+    function getTier(gihwrValue) {
+        if (!gihwrValue || String(gihwrValue).trim() === '-' || String(gihwrValue).trim() === '') return 'U';
+        const value = parseFloat(String(gihwrValue).replace('%', ''));
+        if (isNaN(value)) return 'U';
+        if (value >= 64.0) return 'A+'; if (value >= 62.5) return 'A'; if (value >= 61.5) return 'A-';
+        if (value >= 60.0) return 'B+'; if (value >= 58.8) return 'B'; if (value >= 57.5) return 'B-';
+        if (value >= 56.2) return 'C+'; if (value >= 55.0) return 'C'; if (value >= 53.7) return 'C-';
+        if (value >= 52.5) return 'D+'; if (value >= 51.2) return 'D'; if (value >= 50.0) return 'D-';
+        return 'F';
+    }
+
+    function getTierScore(gihwrValue) {
+        return tierOrder[getTier(gihwrValue)] || 0;
+    }
+
+    function getManaValue(costStr) {
+        if (!costStr) return 0;
+        let total = 0;
+        const numMatch = costStr.match(/[\(（]([0-9０-９]+)[\)）]/g);
+        if (numMatch) {
+            numMatch.forEach(m => {
+                let numStr = m.replace(/[\(（\)\）]/g, '').replace(/[０-９]/g, s => String.fromCharCode(s.charCodeAt(0) - 0xFEE0));
+                const val = parseInt(numStr, 10);
+                if (!isNaN(val)) total += val;
+            });
+        }
+        const symMatch = costStr.match(/[\(（]([a-zA-Z/]+)[\)）]/g);
+        if (symMatch) {
+            symMatch.forEach(m => { if (!m.toUpperCase().includes('X')) total += 1; });
+        }
+        return total;
+    }
+
+    function parseColor(str) {
+        if (!str) return {color:'C'};
+        const cSet = new Set();
+        if (str.match(/[W白]/)) cSet.add('W'); if (str.match(/[U青]/)) cSet.add('U');
+        if (str.match(/[B黒]/)) cSet.add('B'); if (str.match(/[R赤]/)) cSet.add('R');
+        if (str.match(/[G緑]/)) cSet.add('G');
+        if (cSet.size > 1) return { color: 'M' };
+        if (cSet.size === 1) return { color: Array.from(cSet)[0] };
+        if (str.includes('Land')) return { color: 'L' };
+        return { color: 'C' };
+    }
+
+    function setStatus(message, isError = false) {
+        const statusEl = document.getElementById('status-message');
+        statusEl.textContent = message;
+        statusEl.style.color = isError ? '#ff6b6b' : '#9BD3AE';
+    }
+
+    function drawTierIcon(ctx, x, y, gihwr) {
+        const tier = getTier(gihwr);
+        if (tier === 'U') return;
+        const iconX = x + 30, iconY = y + 50, radius = 18;
+        const tierColors = { 'A': '#d92626', 'B': '#22a522', 'C': '#d4a000', 'D': '#2667d9', 'F': '#555555' };
+        const color = tierColors[tier.charAt(0)] || '#888888';
+        ctx.save();
+        ctx.shadowColor = "rgba(0, 0, 0, 0.6)";
+        ctx.shadowBlur = 5;
+        ctx.shadowOffsetX = 2;
+        ctx.shadowOffsetY = 2;
+        ctx.beginPath();
+        ctx.arc(iconX, iconY, radius, 0, Math.PI * 2);
+        ctx.fillStyle = color;
+        ctx.fill();
+        ctx.strokeStyle = '#ffffff';
+        ctx.lineWidth = 2;
+        ctx.stroke();
+        ctx.restore();
+        ctx.fillStyle = '#ffffff';
+        ctx.textAlign = 'center';
+        ctx.textBaseline = 'middle';
+        ctx.font = 'bold 20px Arial';
+        ctx.fillText(tier, iconX, iconY + 1);
+    }
+
+    function drawBadge(ctx, x, y, cnt) {
+        const badgeW = 50, badgeH = 30;
+        ctx.fillStyle = 'rgba(0,0,0,0.8)';
+        ctx.fillRect(x + 5, y + CARD_H - (badgeH + 5), badgeW, badgeH);
+        ctx.fillStyle = '#fff'; ctx.textAlign='center'; ctx.font='bold 22px Arial';
+        ctx.fillText('×'+cnt, x + 5 + (badgeW / 2), y + CARD_H - 10);
+    }
+
+    function drawFallbackCard(ctx, x, y, c) {
+        ctx.fillStyle = '#111';
+        ctx.fillRect(x, y, CARD_W, CARD_H);
+        ctx.strokeStyle = '#444';
+        ctx.lineWidth = 2;
+        ctx.strokeRect(x + 1, y + 1, CARD_W - 2, CARD_H - 2);
+
+        ctx.save();
+        ctx.fillStyle = '#fff';
+        ctx.textAlign = 'center';
+        ctx.textBaseline = 'middle';
+
+        ctx.font = 'bold 18px Arial';
+        ctx.fillText("No Image", x + CARD_W / 2, y + CARD_H / 2 - 20);
+
+        ctx.font = '14px Arial';
+        let cardNameText = c.jpName || c.nameEn || c.displayName;
+        if (cardNameText.length > 25) {
+            cardNameText = cardNameText.substring(0, 22) + '...';
+        }
+        ctx.fillText(cardNameText, x + CARD_W / 2, y + CARD_H / 2 + 10);
+        ctx.restore();
+
+        if (c.cost) {
+            ctx.fillStyle = '#fff';
+            ctx.textAlign = 'right';
+            ctx.font = '12px Arial';
+            ctx.fillText(c.cost, x + CARD_W - 10, y + 20);
+        }
+
+        drawTierIcon(ctx, x, y, c.gihwr);
+        drawBadge(ctx, x, y, c.count);
+    }
+
+    // --- 3. メインロジック ---
+
+    function findCardData(inputName) {
+        const cleanedName = inputName.trim();
+        const cleanedNameLower = cleanedName.toLowerCase();
+
+        if (MASTER_CARD_DATA[cleanedName]) {
+            return { enName: cleanedName, data: MASTER_CARD_DATA[cleanedName] };
+        }
+
+        const enNameFromJp = jpToEnMap.get(cleanedNameLower);
+        if (enNameFromJp && MASTER_CARD_DATA[enNameFromJp]) {
+            return { enName: enNameFromJp, data: MASTER_CARD_DATA[enNameFromJp] };
+        }
+
+        if (cleanedName.includes('/')) {
+            const parts = cleanedName.split('/');
+            const enPart = parts[1].trim();
+            if (MASTER_CARD_DATA[enPart]) {
+                return { enName: enPart, data: MASTER_CARD_DATA[enPart] };
+            }
+        }
+
+        const foundEntry = masterCardEntries.find(([en, data]) =>
+            en.toLowerCase().includes(cleanedNameLower) ||
+            data.jp.toLowerCase().includes(cleanedNameLower)
+        );
+        if (foundEntry) {
+            return { enName: foundEntry[0], data: foundEntry[1] };
+        }
+
+        return null;
+    }
+
+    function parseDeck(deckText) {
+        const lines = deckText.split('\n');
+        const deckCards = [];
+        const basicLands = ['Plains', 'Island', 'Swamp', 'Mountain', 'Forest', '平地', '島', '沼', '山', '森'];
+
+        lines.forEach(line => {
+            const originalLine = line.trim();
+            if (!originalLine || originalLine.includes('??')) return;
+
+            let count = 1;
+            let namePart = originalLine;
+            const countMatch = originalLine.match(/[x×]\s*(\d+)$/);
+            if (countMatch) {
+                count = parseInt(countMatch[1], 10);
+                namePart = originalLine.substring(0, countMatch.index).trim();
+            }
+
+            const cleanedName = namePart.replace(/\(.*\)$/, '').trim();
+            const foundCard = findCardData(cleanedName);
+            const isBasicLand = basicLands.some(l => cleanedName.includes(l));
+
+            if (!foundCard && !isBasicLand) {
+                console.warn(`見つかりません: "${cleanedName}"`);
+                return;
+            }
+
+            const cardData = foundCard ? foundCard.data : {};
+            const nameEn = foundCard ? foundCard.enName : cleanedName;
+
+            let cardInfo = {
+                displayName: cleanedName,
+                count: count,
+                nameEn: nameEn,
+                jpName: cardData.jp || cleanedName,
+                fileName: cardData.fileName || null,
+                cost: cardData.cost || '',
+                type: cardData.type || '', // type情報を取得
+                tier: cardData.tier || 'U',
+                gihwr: cardData.wr || '-',
+                imgObj: null,
+            };
+
+            cardInfo.cmc = getManaValue(cardInfo.cost);
+            cardInfo.color = parseColor(cardInfo.cost).color;
+
+            deckCards.push(cardInfo);
+        });
+        return deckCards;
+    }
+
+    function loadCardImages(deckList) {
+        const promises = deckList.map(card => {
+            return new Promise(resolve => {
+                if (!card.fileName) {
+                    card.imgObj = null;
+                    resolve();
+                    return;
+                }
+                const img = new Image();
+                const src = `./cardlist/${card.fileName}`;
+                img.onload = () => {
+                    card.imgObj = img;
+                    resolve();
+                };
+                img.onerror = () => {
+                    console.warn(`画像ロード失敗: ${src}`);
+                    card.imgObj = null;
+                    resolve();
+                };
+                img.src = src;
+            });
+        });
+        return Promise.all(promises);
+    }
+
+    function drawDeck(deckList) {
+        const groupedCards = {
+            cost0: [], cost1: [], cost2: [], cost3: [], cost4: [], cost5: [], cost6plus: [], lands: []
+        };
+        deckList.forEach(card => {
+            // 【要件1】typeに「土地」または「Land」が含まれていればlandsグループへ
+            if (card.type.includes('土地') || card.type.includes('Land')) {
+                groupedCards.lands.push(card);
+            }
+            else {
+                const cmcKey = card.cmc >= 6 ? 'cost6plus' : `cost${card.cmc}`;
+                groupedCards[cmcKey].push(card);
+            }
+        });
+
+        const sortInGroup = (a, b) => {
+            const tierScoreA = getTierScore(a.gihwr);
+            const tierScoreB = getTierScore(b.gihwr);
+            if (tierScoreA !== tierScoreB) return tierScoreB - tierScoreA;
+            // カードタイプ順ソート (クリーチャー > その他)
+            const isCreatureA = a.type.includes('クリーチャー') || a.type.includes('Creature');
+            const isCreatureB = b.type.includes('クリーチャー') || b.type.includes('Creature');
+            if (isCreatureA !== isCreatureB) return isCreatureA ? -1 : 1;
+            return 0;
+        };
+        for (const key in groupedCards) {
+            if (key !== 'lands') groupedCards[key].sort(sortInGroup);
+        }
+        groupedCards.lands.sort((a, b) => {
+            if (a.count !== b.count) return b.count - a.count;
+            return a.displayName.localeCompare(b.displayName);
+        });
+
+        // --- Canvas描画処理 ---
+        const groupOrder = ['cost0', 'cost1', 'cost2', 'cost3', 'cost4', 'cost5', 'cost6plus', 'lands'];
+        const groupSpacing = 20;
+
+        let requiredHeight = GAP;
+        groupOrder.forEach(key => {
+            const group = groupedCards[key] || [];
+            if (group.length > 0) {
+                requiredHeight += Math.ceil(group.length / COL_COUNT) * (CARD_H + GAP) + groupSpacing;
+            }
+        });
+
+        canvas.width = (CARD_W + GAP) * COL_COUNT + GAP + COUNT_COL_WIDTH;
+        canvas.height = Math.max(requiredHeight, 400) + HEADER_HEIGHT + PADDING;
+        ctx.fillStyle = '#111';
+        ctx.fillRect(0, 0, canvas.width, canvas.height);
+
+        const deckStats = calculateDeckStats(groupedCards);
+        drawDeckStats(ctx, deckStats, GAP, GAP + 5);
+
+        let y = GAP + HEADER_HEIGHT;
+        groupOrder.forEach(key => {
+            const group = groupedCards[key] || [];
+            if (group.length > 0) {
+                const groupStartY = y;
+                let totalCountInGroup = 0;
+
+                group.forEach((card, i) => {
+                    totalCountInGroup += card.count;
+                    const col = i % COL_COUNT;
+                    const row = Math.floor(i / COL_COUNT);
+                    const x = GAP + COUNT_COL_WIDTH + col * (CARD_W + GAP);
+                    const currentY = y + row * (CARD_H + GAP);
+
+                    if (card.imgObj) {
+                        ctx.drawImage(card.imgObj, x, currentY, CARD_W, CARD_H);
+                    } else {
+                        drawFallbackCard(ctx, x, currentY, card);
+                    }
+                    // 【要件3】Tierアイコン描画の復活
+                    drawBadge(ctx, x, currentY, card.count);
+                    drawTierIcon(ctx, x, currentY, card.gihwr);
+                });
+
+                const numRowsInGroup = Math.ceil(group.length / COL_COUNT);
+                const groupHeight = numRowsInGroup * (CARD_H + GAP) - GAP;
+                ctx.save();
+                ctx.fillStyle = 'rgba(255, 255, 255, 0.8)';
+                ctx.font = 'bold 32px Arial';
+                ctx.textAlign = 'center';
+                ctx.textBaseline = 'middle';
+                ctx.shadowColor = "rgba(0, 0, 0, 0.8)";
+                ctx.shadowBlur = 5;
+                ctx.fillText(totalCountInGroup, GAP + (COUNT_COL_WIDTH / 2), groupStartY + groupHeight / 2);
+                ctx.restore();
+
+                y += numRowsInGroup * (CARD_H + GAP) + groupSpacing;
+            }
+        });
+
+        ctx.save();
+        ctx.fillStyle = 'rgba(255, 255, 255, 0.6)';
+        ctx.font = '12px Arial';
+        ctx.textAlign = 'right';
+        ctx.textBaseline = 'bottom';
+        const creditText = "Data provided by 17Lands.com | © Wizards of the Coast | Generated by Decklist Generator";
+        ctx.fillText(creditText, canvas.width - 20, canvas.height - 10);
+        ctx.restore();
+    }
+
+    function calculateDeckStats(groupedCards) {
+        const stats = { creatures: 0, spells: 0, lands: 0 };
+        Object.values(groupedCards).flat().forEach(card => {
+            // 【要件2】カードタイプ別内訳の計算修正
+            if (card.type.includes('土地') || card.type.includes('Land')) {
+                stats.lands += card.count;
+            } else if (card.type.includes('クリーチャー') || card.type.includes('Creature')) {
+                stats.creatures += card.count;
+            } else {
+                stats.spells += card.count;
+            }
+        });
+        return stats;
+    }
+
+    function drawDeckStats(ctx, stats, x, y) {
+        ctx.save();
+        ctx.fillStyle = '#fff';
+        ctx.font = 'bold 20px Arial';
+        ctx.textAlign = 'left';
+        ctx.textBaseline = 'top';
+        ctx.shadowColor = "rgba(0, 0, 0, 1)";
+        ctx.shadowBlur = 4;
+        const total = stats.creatures + stats.spells + stats.lands;
+        ctx.fillText(`Creatures: ${stats.creatures}`, x + 20, y + 20);
+        ctx.fillText(`Spells: ${stats.spells}`, x + 250, y + 20);
+        ctx.fillText(`Lands: ${stats.lands}`, x + 450, y + 20);
+        ctx.fillText(`Total: ${total}`, x + 650, y + 20);
+        ctx.restore();
+    }
+
+    // --- 4. イベントハンドラ ---
+
+    document.getElementById('generate-btn').addEventListener('click', onGenerateClick);
+
+    async function onGenerateClick() {
+        try {
+            setStatus('デッキリストを解析中...');
+            const deckText = document.getElementById('deck-input').value;
+            const deckList = parseDeck(deckText);
+
+            if (deckList.length === 0) {
+                setStatus('カードが見つかりませんでした。入力データを確認してください。', true);
+                return;
+            }
+
+            setStatus('カード画像を読み込み中...');
+            await loadCardImages(deckList);
+
+            setStatus('画像を生成中...');
+            drawDeck(deckList);
+            setStatus('画像生成完了！', false);
+
+        } catch (e) {
+            // 【要件3】詳細エラーログの出力
+            console.error(e);
+            setStatus(`エラーが発生しました: ${e.message}`, true);
+        }
+    }
+</script>
+</body>
+</html>
