@@ -203,44 +203,70 @@ function parseDeck(deckText) {
     const deckCards = [];
     const basicLands = ['Plains', 'Island', 'Swamp', 'Mountain', 'Forest', '平地', '島', '沼', '山', '森'];
 
-    lines.forEach(line => {
-        const originalLine = line.trim();
-        if (!originalLine || originalLine.includes('??')) return;
+    for (let i = 0; i < lines.length; i++) {
+        let line = lines[i].trim();
+        if (!line) continue;
+
+        // 1. ヘッダーのスキップ
+        if (line === 'Deck' || line === 'デッキ') continue;
+
+        // 2. サイドボードの除外 (これ以降は読み込まない)
+        if (line.startsWith('Sideboard') || line.startsWith('サイドボード')) break;
+
+        if (line.includes('??')) continue;
 
         let count = 1;
-        let namePart = originalLine;
-        const countMatch = originalLine.match(/[x×]\s*(\d+)$/);
-        if (countMatch) {
-            count = parseInt(countMatch[1], 10);
-            namePart = originalLine.substring(0, countMatch.index).trim();
+        let namePart = line;
+
+        // 枚数分離: 行頭の数字 (例: "1 カード名...")
+        const leadNumMatch = line.match(/^(\d+)\s+(.+)/);
+        // Arena英語形式などの行末数字 (例: "CardName x2" or "CardName 2") も念のため考慮する場合
+        // しかしユーザー要望は「行頭の数字を枚数とし」なので、まずは行頭優先。
+
+        if (leadNumMatch) {
+            count = parseInt(leadNumMatch[1], 10);
+            namePart = leadNumMatch[2];
+        } else {
+            // 旧形式互換: 行末の "x 2" など
+            const tailNumMatch = line.match(/(.*?)\s*[x×]\s*(\d+)$/);
+            if (tailNumMatch) {
+                count = parseInt(tailNumMatch[2], 10);
+                namePart = tailNumMatch[1];
+            }
         }
 
-        // 正規表現の見直し: [CardName] (SET) 123 形式に対応しつつ、末尾括弧削除のリスクを減らす
-        // 基本的にはArena形式の `(SET)` とコレクター番号を削除する意図
-        // 念のため、末尾が `(SetCode) Number` のようなパターンのみ削除するように少し厳密化することもできるが
-        // 既存ロジックを踏襲しつつ、簡単な修正にとどめる
-        const cleanedName = namePart.replace(/\s*\(.*?\)\s*(\d*)$/, '').trim();
+        // 3. カード名の正規化 (クリーニング)
+
+        // ルビの削除: 全角カッコとその中身
+        namePart = namePart.replace(/（.*?）/g, '');
+
+        // セット情報の削除: 行末の (ABC) 123 形式
+        namePart = namePart.replace(/\s*\([A-Z0-9]{3,}\)\s+\d+$/, '');
+
+        const cleanedName = namePart.trim();
+
+        if (!cleanedName) continue;
 
         const foundCard = findCardData(cleanedName);
         const isBasicLand = basicLands.some(l => cleanedName.includes(l));
 
         if (!foundCard && !isBasicLand) {
             console.warn(`見つかりません: "${cleanedName}"`);
-            return;
+            continue;
         }
 
         const cardData = foundCard ? foundCard.data : {};
         const nameEn = foundCard ? foundCard.enName : cleanedName;
 
         let cardInfo = {
-            displayName: cleanedName,
+            displayName: cleanedName, // クリーニング後の名前を表示名とする
             count: count,
             nameEn: nameEn,
             jpName: cardData.jp || cleanedName,
             fileName: cardData.fileName || null,
             cost: cardData.cost || '',
             type: cardData.type || '',
-            tier: cardData.tier || 'U', // gamedata.jsのtierをそのまま使う
+            tier: cardData.tier || 'U',
             gihwr: cardData.wr || '-',
             imgObj: null,
         };
@@ -249,7 +275,7 @@ function parseDeck(deckText) {
         cardInfo.color = parseColor(cardInfo.cost).color;
 
         deckCards.push(cardInfo);
-    });
+    }
     return deckCards;
 }
 
