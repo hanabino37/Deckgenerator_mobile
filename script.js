@@ -215,13 +215,13 @@ function parseDeck(deckText) {
 
         if (line.includes('??')) continue;
 
+        const originalLine = line; // デバッグ用
+
         let count = 1;
         let namePart = line;
 
         // 枚数分離: 行頭の数字 (例: "1 カード名...")
         const leadNumMatch = line.match(/^(\d+)\s+(.+)/);
-        // Arena英語形式などの行末数字 (例: "CardName x2" or "CardName 2") も念のため考慮する場合
-        // しかしユーザー要望は「行頭の数字を枚数とし」なので、まずは行頭優先。
 
         if (leadNumMatch) {
             count = parseInt(leadNumMatch[1], 10);
@@ -237,13 +237,16 @@ function parseDeck(deckText) {
 
         // 3. カード名の正規化 (クリーニング)
 
-        // ルビの削除: 全角カッコとその中身
+        // ルビの削除: 全角カッコとその中身 (gフラグで全て削除)
         namePart = namePart.replace(/（.*?）/g, '');
 
         // セット情報の削除: 行末の (ABC) 123 形式
         namePart = namePart.replace(/\s*\([A-Z0-9]{3,}\)\s+\d+$/, '');
 
         const cleanedName = namePart.trim();
+
+        // デバッグログ出力
+        console.log("Original:", originalLine, "Parsed:", cleanedName);
 
         if (!cleanedName) continue;
 
