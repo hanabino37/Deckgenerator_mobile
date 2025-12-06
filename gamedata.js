@@ -2355,7 +2355,7 @@ const MASTER_CARD_DATA = {
     "Aang's Shelter": {
         "jp": "アンのシェルター",
         "cost": "(２)(W)",
-        "type": "",
+        "type": "インスタント",
         "fileName": null,
         "tier": "U",
         "wr": "-"
@@ -2363,7 +2363,7 @@ const MASTER_CARD_DATA = {
     "Release to Memory": {
         "jp": "記憶への開放",
         "cost": "(３)(W)",
-        "type": "",
+        "type": "インスタント",
         "fileName": "記憶への開放.png",
         "tier": "U",
         "wr": "-"
@@ -2371,7 +2371,7 @@ const MASTER_CARD_DATA = {
     "Brought Back": {
         "jp": "帰寂からの帰還",
         "cost": "(W)(W)",
-        "type": "",
+        "type": "インスタント",
         "fileName": "帰寂からの帰還.png",
         "tier": "U",
         "wr": "-"
@@ -2379,7 +2379,7 @@ const MASTER_CARD_DATA = {
     "Empty City Ruse": {
         "jp": "空城の計",
         "cost": "(W)",
-        "type": "",
+        "type": "ソーサリー",
         "fileName": "空城の計.png",
         "tier": "U",
         "wr": "-"
@@ -2387,7 +2387,7 @@ const MASTER_CARD_DATA = {
     "Scout's Warning": {
         "jp": "斥候の警告",
         "cost": "(W)",
-        "type": "",
+        "type": "インスタント",
         "fileName": "斥候の警告.png",
         "tier": "U",
         "wr": "-"
@@ -2395,7 +2395,7 @@ const MASTER_CARD_DATA = {
     "The Mechanist, Tactical Tinkerer": {
         "jp": "戦術の発明家、機械技師",
         "cost": "(２)(W)",
-        "type": "",
+        "type": "伝説のアーティファクト・クリーチャー --- 工匠(Artificer)",
         "fileName": null,
         "tier": "U",
         "wr": "-"
@@ -2403,7 +2403,7 @@ const MASTER_CARD_DATA = {
     "Mayor Tong of Chin Village": {
         "jp": "チン村のトン村長",
         "cost": "(１)(W)",
-        "type": "",
+        "type": "クリーチャー --- 人間(Human)",
         "fileName": null,
         "tier": "U",
         "wr": "-"
@@ -2411,7 +2411,7 @@ const MASTER_CARD_DATA = {
     "Three Dreams": {
         "jp": "三つの夢",
         "cost": "(４)(W)",
-        "type": "",
+        "type": "ソーサリー",
         "fileName": "三つの夢.png",
         "tier": "U",
         "wr": "-"
@@ -2419,7 +2419,7 @@ const MASTER_CARD_DATA = {
     "Standstill": {
         "jp": "行き詰まり",
         "cost": "(１)(U)",
-        "type": "",
+        "type": "エンチャント",
         "fileName": "行き詰まり.png",
         "tier": "U",
         "wr": "-"
@@ -2427,7 +2427,7 @@ const MASTER_CARD_DATA = {
     "Agent of Treachery": {
         "jp": "裏切りの工作員",
         "cost": "(５)(U)(U)",
-        "type": "",
+        "type": "クリーチャー --- 人間(Human)・ならず者(Rogue)",
         "fileName": "裏切りの工作員.png",
         "tier": "U",
         "wr": "-"
@@ -2435,7 +2435,7 @@ const MASTER_CARD_DATA = {
     "Visions of Beyond": {
         "jp": "彼方の映像",
         "cost": "(U)",
-        "type": "",
+        "type": "インスタント",
         "fileName": "彼方の映像.png",
         "tier": "U",
         "wr": "-"
@@ -2443,7 +2443,7 @@ const MASTER_CARD_DATA = {
     "Clone": {
         "jp": "クローン",
         "cost": "(３)(U)",
-        "type": "",
+        "type": "クリーチャー --- 多相の戦士(Shapeshifter)",
         "fileName": "クローン.png",
         "tier": "U",
         "wr": "-"
@@ -2451,7 +2451,7 @@ const MASTER_CARD_DATA = {
     "Clone Legion": {
         "jp": "クローンの軍勢",
         "cost": "(７)(U)(U)",
-        "type": "",
+        "type": "ソーサリー",
         "fileName": "クローンの軍勢.png",
         "tier": "U",
         "wr": "-"
@@ -2459,7 +2459,7 @@ const MASTER_CARD_DATA = {
     "Training Grounds": {
         "jp": "訓練場",
         "cost": "(U)",
-        "type": "",
+        "type": "エンチャント",
         "fileName": "訓練場.png",
         "tier": "U",
         "wr": "-"
@@ -2467,7 +2467,7 @@ const MASTER_CARD_DATA = {
     "Intruder Alarm": {
         "jp": "侵入警報",
         "cost": "(２)(U)",
-        "type": "",
+        "type": "エンチャント",
         "fileName": "侵入警報.png",
         "tier": "U",
         "wr": "-"
@@ -2475,7 +2475,7 @@ const MASTER_CARD_DATA = {
     "Mystic Remora": {
         "jp": "神秘的負荷",
         "cost": "(U)",
-        "type": "",
+        "type": "エンチャント",
         "fileName": "神秘的負荷.png",
         "tier": "U",
         "wr": "-"
@@ -2483,7 +2483,7 @@ const MASTER_CARD_DATA = {
     "Bribery": {
         "jp": "袖の下",
         "cost": "(３)(U)(U)",
-        "type": "",
+        "type": "ソーサリー",
         "fileName": "袖の下.png",
         "tier": "U",
         "wr": "-"
@@ -2491,7 +2491,7 @@ const MASTER_CARD_DATA = {
     "Imprisoned in the Moon": {
         "jp": "月への封印",
         "cost": "(２)(U)",
-        "type": "",
+        "type": "エンチャント",
         "fileName": "月への封印.png",
         "tier": "U",
         "wr": "-"
@@ -2499,7 +2499,7 @@ const MASTER_CARD_DATA = {
     "Prosperity": {
         "jp": "繁栄",
         "cost": "(X)(U)",
-        "type": "",
+        "type": "ソーサリー",
         "fileName": "繁栄.png",
         "tier": "U",
         "wr": "-"
@@ -2507,7 +2507,7 @@ const MASTER_CARD_DATA = {
     "Force of Negation": {
         "jp": "否定の力",
         "cost": "(１)(U)(U)",
-        "type": "",
+        "type": "インスタント",
         "fileName": "否定の力.png",
         "tier": "U",
         "wr": "-"
@@ -2515,7 +2515,7 @@ const MASTER_CARD_DATA = {
     "Joo Dee, Public Servant": {
         "jp": "都の奉仕人、ジュー・ディー",
         "cost": "(３)(U)",
-        "type": "",
+        "type": "クリーチャー --- 人間(Human)・ならず者(Rogue)",
         "fileName": null,
         "tier": "U",
         "wr": "-"
@@ -2523,7 +2523,7 @@ const MASTER_CARD_DATA = {
     "Black Sun's Zenith": {
         "jp": "黒の太陽の頂点",
         "cost": "(X)(B)(B)",
-        "type": "",
+        "type": "ソーサリー",
         "fileName": "黒の太陽の頂点.png",
         "tier": "U",
         "wr": "-"
@@ -2531,7 +2531,7 @@ const MASTER_CARD_DATA = {
     "Cruel Tutor": {
         "jp": "残酷な教示者",
         "cost": "(２)(B)",
-        "type": "",
+        "type": "ソーサリー",
         "fileName": "残酷な教示者.png",
         "tier": "U",
         "wr": "-"
@@ -2539,7 +2539,7 @@ const MASTER_CARD_DATA = {
     "Bloodbender's Rise": {
         "jp": "血のベンダーの覚醒",
         "cost": "(B)",
-        "type": "",
+        "type": "エンチャント",
         "fileName": null,
         "tier": "U",
         "wr": "-"
@@ -2547,7 +2547,7 @@ const MASTER_CARD_DATA = {
     "Fire Nation Tank Train": {
         "jp": "火の国の装甲列車",
         "cost": "(４)(B)(B)",
-        "type": "",
+        "type": "アーティファクト・クリーチャー --- 構築物(Construct)",
         "fileName": null,
         "tier": "U",
         "wr": "-"
@@ -2555,7 +2555,7 @@ const MASTER_CARD_DATA = {
     "Lightning Bolt": {
         "jp": "稲妻",
         "cost": "(R)",
-        "type": "",
+        "type": "インスタント",
         "fileName": "稲妻.png",
         "tier": "U",
         "wr": "-"
@@ -2563,7 +2563,7 @@ const MASTER_CARD_DATA = {
     "Azula, Flame of Ember Island": {
         "jp": "エンバー島の情熱、アズーラ",
         "cost": "(３)(R)",
-        "type": "",
+        "type": "伝説のクリーチャー --- 人間(Human) ・アドバイザー(Advisor)",
         "fileName": null,
         "tier": "U",
         "wr": "-"
@@ -2571,7 +2571,7 @@ const MASTER_CARD_DATA = {
     "Volcanic Torrent": {
         "jp": "火山の奔流",
         "cost": "(４)(R)",
-        "type": "",
+        "type": "ソーサリー",
         "fileName": "火山の奔流.png",
         "tier": "U",
         "wr": "-"
@@ -2579,7 +2579,7 @@ const MASTER_CARD_DATA = {
     "Mirrorwing Dragon": {
         "jp": "鏡翼のドラゴン",
         "cost": "(３)(R)(R)",
-        "type": "",
+        "type": "クリーチャー --- ドラゴン(Dragon)",
         "fileName": "鏡翼のドラゴン.png",
         "tier": "U",
         "wr": "-"
@@ -2587,7 +2587,7 @@ const MASTER_CARD_DATA = {
     "Humble Defector": {
         "jp": "謙虚な離反者",
         "cost": "(１)(R)",
-        "type": "",
+        "type": "クリーチャー --- 人間(Human)・ならず者(Rogue)",
         "fileName": "謙虚な離反者.png",
         "tier": "U",
         "wr": "-"
@@ -2595,7 +2595,7 @@ const MASTER_CARD_DATA = {
     "Searing Blood": {
         "jp": "灼熱の血",
         "cost": "(R)(R)",
-        "type": "",
+        "type": "インスタント",
         "fileName": "灼熱の血.png",
         "tier": "U",
         "wr": "-"
@@ -2603,7 +2603,7 @@ const MASTER_CARD_DATA = {
     "Warstorm Surge": {
         "jp": "戦嵐のうねり",
         "cost": "(５)(R)",
-        "type": "",
+        "type": "エンチャント",
         "fileName": "戦嵐のうねり.png",
         "tier": "U",
         "wr": "-"
@@ -2611,7 +2611,7 @@ const MASTER_CARD_DATA = {
     "Fervor": {
         "jp": "熱情",
         "cost": "(２)(R)",
-        "type": "",
+        "type": "エンチャント",
         "fileName": "熱情.png",
         "tier": "U",
         "wr": "-"
@@ -2619,7 +2619,7 @@ const MASTER_CARD_DATA = {
     "Shattering Spree": {
         "jp": "破壊放題",
         "cost": "(R)",
-        "type": "",
+        "type": "ソーサリー",
         "fileName": "破壊放題.png",
         "tier": "U",
         "wr": "-"
@@ -2627,7 +2627,7 @@ const MASTER_CARD_DATA = {
     "Dockside Extortionist": {
         "jp": "波止場の恐喝者",
         "cost": "(１)(R)",
-        "type": "",
+        "type": "クリーチャー --- ゴブリン(Goblin)・ 海賊(Pirate)",
         "fileName": "波止場の恐喝者.png",
         "tier": "U",
         "wr": "-"
@@ -2635,7 +2635,7 @@ const MASTER_CARD_DATA = {
     "Rending Volley": {
         "jp": "引き裂く流弾",
         "cost": "(R)",
-        "type": "",
+        "type": "インスタント",
         "fileName": "引き裂く流弾.png",
         "tier": "U",
         "wr": "-"
@@ -2643,7 +2643,7 @@ const MASTER_CARD_DATA = {
     "Blasphemous Act": {
         "jp": "冒涜の行動",
         "cost": "(８)(R)",
-        "type": "",
+        "type": "ソーサリー",
         "fileName": "冒涜の行動.png",
         "tier": "U",
         "wr": "-"
@@ -2651,7 +2651,7 @@ const MASTER_CARD_DATA = {
     "Insurrection": {
         "jp": "暴動",
         "cost": "(５)(R)(R)(R)",
-        "type": "",
+        "type": "ソーサリー",
         "fileName": "暴動.png",
         "tier": "U",
         "wr": "-"
@@ -2659,7 +2659,7 @@ const MASTER_CARD_DATA = {
     "Rites of Flourishing": {
         "jp": "栄華の儀式",
         "cost": "(２)(G)",
-        "type": "",
+        "type": "エンチャント",
         "fileName": "栄華の儀式.png",
         "tier": "U",
         "wr": "-"
@@ -2667,7 +2667,7 @@ const MASTER_CARD_DATA = {
     "Heroic Intervention": {
         "jp": "英雄的介入",
         "cost": "(１)(G)",
-        "type": "",
+        "type": "インスタント",
         "fileName": "英雄的介入.png",
         "tier": "U",
         "wr": "-"
@@ -2675,7 +2675,7 @@ const MASTER_CARD_DATA = {
     "Beastmaster Ascension": {
         "jp": "獣使いの昇天",
         "cost": "(２)(G)",
-        "type": "",
+        "type": "エンチャント",
         "fileName": "獣使いの昇天.png",
         "tier": "U",
         "wr": "-"
@@ -2683,7 +2683,7 @@ const MASTER_CARD_DATA = {
     "Elemental Bond": {
         "jp": "精霊の絆",
         "cost": "(２)(G)",
-        "type": "",
+        "type": "エンチャント",
         "fileName": "精霊の絆.png",
         "tier": "U",
         "wr": "-"
@@ -2691,7 +2691,7 @@ const MASTER_CARD_DATA = {
     "Taunting Challenge": {
         "jp": "挑発",
         "cost": "(１)(G)(G)",
-        "type": "",
+        "type": "ソーサリー",
         "fileName": "挑発.png",
         "tier": "U",
         "wr": "-"
@@ -2699,7 +2699,7 @@ const MASTER_CARD_DATA = {
     "Heartbeat of Spring": {
         "jp": "春の鼓動",
         "cost": "(２)(G)",
-        "type": "",
+        "type": "エンチャント",
         "fileName": "春の鼓動.png",
         "tier": "U",
         "wr": "-"
@@ -2707,7 +2707,7 @@ const MASTER_CARD_DATA = {
     "The Banyan Tree": {
         "jp": "バンヤングローブの木",
         "cost": "(７)(G)(G)",
-        "type": "",
+        "type": "伝説のアーティファクト",
         "fileName": null,
         "tier": "U",
         "wr": "-"
@@ -2715,7 +2715,7 @@ const MASTER_CARD_DATA = {
     "Earth Rumble Triumph": {
         "jp": "土の武道会の覇者",
         "cost": "(４)(G)",
-        "type": "",
+        "type": "インスタント",
         "fileName": null,
         "tier": "U",
         "wr": "-"
@@ -2723,7 +2723,7 @@ const MASTER_CARD_DATA = {
     "Fevered Visions": {
         "jp": "熱病の幻視",
         "cost": "(１)(U)(R)",
-        "type": "",
+        "type": "エンチャント",
         "fileName": "熱病の幻視.png",
         "tier": "U",
         "wr": "-"
@@ -2731,7 +2731,7 @@ const MASTER_CARD_DATA = {
     "Lifelong Friendship": {
         "jp": "一生の友",
         "cost": "(G)(W)",
-        "type": "",
+        "type": "インスタント",
         "fileName": null,
         "tier": "U",
         "wr": "-"
@@ -2739,7 +2739,7 @@ const MASTER_CARD_DATA = {
     "Join the Dance": {
         "jp": "踊りへの参加",
         "cost": "(G)(W)",
-        "type": "",
+        "type": "ソーサリー",
         "fileName": "踊りへの参加.png",
         "tier": "U",
         "wr": "-"
@@ -2747,7 +2747,7 @@ const MASTER_CARD_DATA = {
     "Suki of the Kyoshi Warrior": {
         "jp": "キヨシの戦士長、スキ",
         "cost": "(２)(G)(W)",
-        "type": "",
+        "type": "伝説のクリーチャー --- 人間(Human)・兵士(Soldier)",
         "fileName": null,
         "tier": "U",
         "wr": "-"
@@ -2755,7 +2755,7 @@ const MASTER_CARD_DATA = {
     "The Monstrous Serpent": {
         "jp": "大蛇",
         "cost": "(３)(G)(G)(U)(U)",
-        "type": "",
+        "type": "伝説のクリーチャー --- 海蛇(Serpent)",
         "fileName": null,
         "tier": "U",
         "wr": "-"
@@ -2763,7 +2763,7 @@ const MASTER_CARD_DATA = {
     "Zuko Redeemed": {
         "jp": "贖いしズーコ",
         "cost": "(G)/(W)",
-        "type": "",
+        "type": "伝説のクリーチャー --- エルフ(Elf)・ 戦士(Warrior)",
         "fileName": null,
         "tier": "U",
         "wr": "-"
@@ -2771,7 +2771,7 @@ const MASTER_CARD_DATA = {
     "Meteorite": {
         "jp": "隕石",
         "cost": "(５)",
-        "type": "",
+        "type": "アーティファクト",
         "fileName": "隕石.png",
         "tier": "U",
         "wr": "-"
@@ -2779,7 +2779,7 @@ const MASTER_CARD_DATA = {
     "Cityscape Leveler": {
         "jp": "街並みの地ならし屋",
         "cost": "(８)",
-        "type": "",
+        "type": "アーティファクト・クリーチャー --- 構築物(Construct)",
         "fileName": "街並みの地ならし屋.png",
         "tier": "U",
         "wr": "-"
@@ -2787,7 +2787,7 @@ const MASTER_CARD_DATA = {
     "Sundial of the Infinite": {
         "jp": "無限の日時計",
         "cost": "(２)",
-        "type": "",
+        "type": "アーティファクト",
         "fileName": "無限の日時計.png",
         "tier": "U",
         "wr": "-"
@@ -2795,7 +2795,7 @@ const MASTER_CARD_DATA = {
     "Tarnished Citadel": {
         "jp": "色あせた城塞",
         "cost": "",
-        "type": "",
+        "type": "土地",
         "fileName": "色あせた城塞.png",
         "tier": "U",
         "wr": "-"
@@ -2803,7 +2803,7 @@ const MASTER_CARD_DATA = {
     "The Boy in Iceberg": {
         "jp": "氷に閉じ込められた少年",
         "cost": "",
-        "type": "",
+        "type": "土地",
         "fileName": null,
         "tier": "U",
         "wr": "-"
@@ -2811,7 +2811,7 @@ const MASTER_CARD_DATA = {
     "Fabled Passage": {
         "jp": "寓話の小道",
         "cost": "",
-        "type": "",
+        "type": "土地",
         "fileName": "寓話の小道.png",
         "tier": "U",
         "wr": "-"
@@ -2819,7 +2819,7 @@ const MASTER_CARD_DATA = {
     "Sunbaked Canyon": {
         "jp": "灼陽大峡谷",
         "cost": "",
-        "type": "",
+        "type": "土地",
         "fileName": "灼陽大峡谷.png",
         "tier": "U",
         "wr": "-"
@@ -2827,7 +2827,7 @@ const MASTER_CARD_DATA = {
     "Treetop Village": {
         "jp": "樹上の村",
         "cost": "",
-        "type": "",
+        "type": "土地",
         "fileName": "樹上の村.png",
         "tier": "U",
         "wr": "-"
@@ -2835,7 +2835,7 @@ const MASTER_CARD_DATA = {
     "Volcano of Roku's Island": {
         "jp": "ロクの島の火山",
         "cost": "",
-        "type": "",
+        "type": "土地",
         "fileName": null,
         "tier": "U",
         "wr": "-"

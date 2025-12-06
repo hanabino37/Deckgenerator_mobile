@@ -5032,297 +5032,361 @@ III ― この英雄譚を追放する。その後、これを変身させた状
 英語名：Aang's Shelter
 日本語名：アンのシェルター
 コスト：(２)(W)
+タイプ：インスタント
 
 395.
 英語名：Release to Memory
 日本語名：記憶への開放
 コスト：(３)(W)
+タイプ：インスタント
 
 396.
 英語名：Brought Back
 日本語名：帰寂からの帰還
 コスト：(W)(W)
+タイプ：インスタント
 
 397.
 英語名：Empty City Ruse
 日本語名：空城の計
 コスト：(W)
+タイプ：ソーサリー
 
 398.
 英語名：Scout's Warning
 日本語名：斥候の警告
 コスト：(W)
+タイプ：インスタント
 
 399.
 英語名：The Mechanist, Tactical Tinkerer
 日本語名：戦術の発明家、機械技師
 コスト：(２)(W)
+タイプ：伝説のアーティファクト・クリーチャー --- 工匠(Artificer)
+
 
 400.
 英語名：Mayor Tong of Chin Village
 日本語名：チン村のトン村長
 コスト：(１)(W)
+タイプ：クリーチャー --- 人間(Human)
 
 401.
 英語名：Three Dreams
 日本語名：三つの夢
 コスト：(４)(W)
+タイプ：ソーサリー
 
 402.
 英語名：Standstill
 日本語名：行き詰まり
 コスト：(１)(U)
+タイプ：エンチャント
 
 403.
 英語名：Agent of Treachery
 日本語名：裏切りの工作員
 コスト：(５)(U)(U)
+タイプ：クリーチャー --- 人間(Human)・ならず者(Rogue)
 
 404.
 英語名：Visions of Beyond
 日本語名：彼方の映像
 コスト：(U)
+タイプ：インスタント
 
 405.
 英語名：Clone
 日本語名：クローン
 コスト：(３)(U)
+タイプ：クリーチャー --- 多相の戦士(Shapeshifter)
 
 406.
 英語名：Clone Legion
 日本語名：クローンの軍勢
 コスト：(７)(U)(U)
+タイプ：ソーサリー
 
 407.
 英語名：Training Grounds
 日本語名：訓練場
 コスト：(U)
+タイプ：エンチャント
 
 408.
 英語名：Intruder Alarm
 日本語名：侵入警報
 コスト：(２)(U)
+タイプ：エンチャント
 
 409.
 英語名：Mystic Remora
 日本語名：神秘的負荷
 コスト：(U)
+タイプ：エンチャント
 
 410.
 英語名：Bribery
 日本語名：袖の下
 コスト：(３)(U)(U)
+タイプ：ソーサリー
 
 411.
 英語名：Imprisoned in the Moon
 日本語名：月への封印
 コスト：(２)(U)
+タイプ：エンチャント
 
 412.
 英語名：Prosperity
 日本語名：繁栄
 コスト：(X)(U)
+タイプ：ソーサリー
 
 413.
 英語名：Force of Negation
 日本語名：否定の力
 コスト：(１)(U)(U)
+タイプ：インスタント
 
 414.
 英語名：Joo Dee, Public Servant
 日本語名：都の奉仕人、ジュー・ディー
 コスト：(３)(U)
+タイプ：クリーチャー --- 人間(Human)・ならず者(Rogue)
 
 415.
 英語名：Black Sun's Zenith
 日本語名：黒の太陽の頂点
 コスト：(X)(B)(B)
+タイプ：ソーサリー
 
 416.
 英語名：Cruel Tutor
 日本語名：残酷な教示者
 コスト：(２)(B)
+タイプ：ソーサリー
 
 417.
 英語名：Bloodbender's Rise
 日本語名：血のベンダーの覚醒
 コスト：(B)
+タイプ：エンチャント
 
 418.
 英語名：Fire Nation Tank Train
 日本語名：火の国の装甲列車
 コスト：(４)(B)(B)
+タイプ：アーティファクト・クリーチャー --- 構築物(Construct)
 
 419.
 英語名：Lightning Bolt
 日本語名：稲妻
 コスト：(R)
+タイプ：インスタント
 
 420.
 英語名：Azula, Flame of Ember Island
 日本語名：エンバー島の情熱、アズーラ
 コスト：(３)(R)
+タイプ：伝説のクリーチャー --- 人間(Human) ・アドバイザー(Advisor)
 
 421.
 英語名：Volcanic Torrent
 日本語名：火山の奔流
 コスト：(４)(R)
+タイプ：ソーサリー
 
 422.
 英語名：Mirrorwing Dragon
 日本語名：鏡翼のドラゴン
 コスト：(３)(R)(R)
+タイプ：クリーチャー --- ドラゴン(Dragon)
+
 
 423.
 英語名：Humble Defector
 日本語名：謙虚な離反者
 コスト：(１)(R)
+タイプ：クリーチャー --- 人間(Human)・ならず者(Rogue)
 
 424.
 英語名：Searing Blood
 日本語名：灼熱の血
 コスト：(R)(R)
+タイプ：インスタント
 
 425.
 英語名：Warstorm Surge
 日本語名：戦嵐のうねり
 コスト：(５)(R)
+タイプ：エンチャント
 
 426.
 英語名：Fervor
 日本語名：熱情
 コスト：(２)(R)
+タイプ：エンチャント
 
 427.
 英語名：Shattering Spree
 日本語名：破壊放題
 コスト：(R)
+タイプ：ソーサリー
 
 428.
 英語名：Dockside Extortionist
 日本語名：波止場の恐喝者
 コスト：(１)(R)
+タイプ：クリーチャー --- ゴブリン(Goblin)・ 海賊(Pirate)
 
 429.
 英語名：Rending Volley
 日本語名：引き裂く流弾
 コスト：(R)
+タイプ：インスタント
 
 430.
 英語名：Blasphemous Act
 日本語名：冒涜の行動
 コスト：(８)(R)
+タイプ：ソーサリー
 
 431.
 英語名：Insurrection
 日本語名：暴動
 コスト：(５)(R)(R)(R)
+タイプ：ソーサリー
 
 432.
 英語名：Rites of Flourishing
 日本語名：栄華の儀式
 コスト：(２)(G)
+タイプ：エンチャント
 
 433.
 英語名：Heroic Intervention
 日本語名：英雄的介入
 コスト：(１)(G)
+タイプ：インスタント
 
 434.
 英語名：Beastmaster Ascension
 日本語名：獣使いの昇天
 コスト：(２)(G)
+タイプ：エンチャント
 
 435.
 英語名：Elemental Bond
 日本語名：精霊の絆
 コスト：(２)(G)
+タイプ：エンチャント
 
 436.
 英語名：Taunting Challenge
 日本語名：挑発
 コスト：(１)(G)(G)
+タイプ：ソーサリー
 
 437.
 英語名：Heartbeat of Spring
 日本語名：春の鼓動
 コスト：(２)(G)
+タイプ：エンチャント
 
 438.
 英語名：The Banyan Tree
 日本語名：バンヤングローブの木
 コスト：(７)(G)(G)
+タイプ：伝説のアーティファクト
 
 439.
 英語名：Earth Rumble Triumph
 日本語名：土の武道会の覇者
 コスト：(４)(G)
+タイプ：インスタント
 
 440.
 英語名：Fevered Visions
 日本語名：熱病の幻視
 コスト：(１)(U)(R)
+タイプ：エンチャント
 
 441.
 英語名：Lifelong Friendship
 日本語名：一生の友
 コスト：(G)(W)
+タイプ：インスタント
 
 442.
 英語名：Join the Dance
 日本語名：踊りへの参加
 コスト：(G)(W)
+タイプ：ソーサリー
 
 443.
 英語名：Suki of the Kyoshi Warrior
 日本語名：キヨシの戦士長、スキ
 コスト：(２)(G)(W)
+タイプ：伝説のクリーチャー --- 人間(Human)・兵士(Soldier)
 
 444.
 英語名：The Monstrous Serpent
 日本語名：大蛇
 コスト：(３)(G)(G)(U)(U)
+タイプ：伝説のクリーチャー --- 海蛇(Serpent)
 
 445.
 英語名：Zuko Redeemed
 日本語名：贖いしズーコ
 コスト：(G)/(W)
+タイプ：伝説のクリーチャー --- エルフ(Elf)・ 戦士(Warrior)
 
 446.
 英語名：Meteorite
 日本語名：隕石
 コスト：(５)
+タイプ：アーティファクト
 
 447.
 英語名：Cityscape Leveler
 日本語名：街並みの地ならし屋
 コスト：(８)
+タイプ：アーティファクト・クリーチャー --- 構築物(Construct)
+
 
 448.
 英語名：Sundial of the Infinite
 日本語名：無限の日時計
 コスト：(２)
+タイプ：アーティファクト
 
 449.
 英語名：Tarnished Citadel
 日本語名：色あせた城塞
+タイプ：土地
 
 450.
 英語名：The Boy in Iceberg
 日本語名：氷に閉じ込められた少年
+タイプ：土地
 
 451.
 英語名：Fabled Passage
 日本語名：寓話の小道
+タイプ：土地
 
 452.
 英語名：Sunbaked Canyon
 日本語名：灼陽大峡谷
+タイプ：土地
 
 453.
 英語名：Treetop Village
 日本語名：樹上の村
+タイプ：土地
 
 454.
 英語名：Volcano of Roku's Island
 日本語名：ロクの島の火山
+タイプ：土地
