@@ -24,6 +24,7 @@ const tierOrder = {
 // 日本語名 -> 英語名 のマッピングを作成（検索用）
 const jpToEnMap = new Map(Object.entries(MASTER_CARD_DATA).map(([en, data]) => [data.jp.toLowerCase(), en]));
 const masterCardEntries = Object.entries(MASTER_CARD_DATA);
+const BASIC_LAND_NAMES = ['Plains', 'Island', 'Swamp', 'Mountain', 'Forest', '平地', '島', '沼', '山', '森'];
 
 // --- 初期化処理 (DOMContentLoaded) ---
 document.addEventListener('DOMContentLoaded', () => {
@@ -44,7 +45,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 // --- 2. ヘルパー関数群 ---
-
 // 以前の getTier() 関数は削除しました。gamedata.js の tier プロパティを使用します。
 
 function getTierScore(tierStr) {
@@ -201,7 +201,7 @@ function findCardData(inputName) {
 function parseDeck(deckText) {
     const lines = deckText.split('\n');
     const deckCards = [];
-    const basicLands = ['Plains', 'Island', 'Swamp', 'Mountain', 'Forest', '平地', '島', '沼', '山', '森'];
+    // basicLands local variable removed
 
     for (let i = 0; i < lines.length; i++) {
         let line = lines[i].trim();
@@ -220,22 +220,43 @@ function parseDeck(deckText) {
         let count = 1;
         let namePart = line;
 
-        // 枚数分離: 行頭の数字 (例: "1 カード名...")
-        const leadNumMatch = line.match(/^(\d+)\s+(.+)/);
+        // --- 改良された解析ロジック ---
 
-        if (leadNumMatch) {
-            count = parseInt(leadNumMatch[1], 10);
-            namePart = leadNumMatch[2];
+        // A. MO形式: 行末の "x数字" をチェック (例: "Card Name (Cost) x1")
+        const moTailMatch = line.match(/\s+x(\d+)$/);
+
+        if (moTailMatch) {
+            count = parseInt(moTailMatch[1], 10);
+            namePart = line.substring(0, moTailMatch.index);
+
+            // MO形式特有のクリーニング:
+            // 1. マナコスト表記 \s*\(.*?\) を削除
+            namePart = namePart.replace(/\s*\(.*?\)/g, '');
+
+            // 2. 日英併記 "日本語/English" の場合、日本語部分(=スラッシュより前)のみ取得
+            if (namePart.includes('/')) {
+                namePart = namePart.split('/')[0];
+            }
+
+            // 3. 前後トリム
+            namePart = namePart.trim();
         } else {
-            // 旧形式互換: 行末の "x 2" など
-            const tailNumMatch = line.match(/(.*?)\s*[x×]\s*(\d+)$/);
-            if (tailNumMatch) {
-                count = parseInt(tailNumMatch[2], 10);
-                namePart = tailNumMatch[1];
+            // B. アリーナ形式: 行頭の数字 (例: "1 Card Name")
+            const leadNumMatch = line.match(/^(\d+)\s+(.+)/);
+            if (leadNumMatch) {
+                count = parseInt(leadNumMatch[1], 10);
+                namePart = leadNumMatch[2];
+            } else {
+                // 旧形式互換: 行末の "x 2" など
+                const tailNumMatch = line.match(/(.*?)\s*[x×]\s*(\d+)$/);
+                if (tailNumMatch) {
+                    count = parseInt(tailNumMatch[2], 10);
+                    namePart = tailNumMatch[1];
+                }
             }
         }
 
-        // 3. カード名の正規化 (クリーニング)
+        // 3. カード名の正規化 (共通処理/アリーナ用)
 
         // ルビの削除: 全角カッコとその中身 (gフラグで全て削除)
         namePart = namePart.replace(/（.*?）/g, '');
@@ -246,14 +267,15 @@ function parseDeck(deckText) {
         const cleanedName = namePart.trim();
 
         // デバッグログ出力
-        console.log("Original:", originalLine, "Parsed:", cleanedName);
+        console.log("Original:", originalLine, "Parsed:", cleanedName, "Count:", count);
 
         if (!cleanedName) continue;
 
         const foundCard = findCardData(cleanedName);
-        const isBasicLand = basicLands.some(l => cleanedName.includes(l));
+        const isBasicLand = BASIC_LAND_NAMES.some(l => cleanedName.includes(l));
 
         if (!foundCard && !isBasicLand) {
+
             console.warn(`見つかりません: "${cleanedName}"`);
             continue;
         }
@@ -339,8 +361,44 @@ function drawDeck(deckList) {
         if (key !== 'lands') groupedCards[key].sort(sortInGroup);
     }
     groupedCards.lands.sort((a, b) => {
-        if (a.count !== b.count) return b.count - a.count;
-        return a.displayName.localeCompare(b.displayName);
+        // 1. 特殊地形 vs 基本地形
+        // 基本地形判定: 名前が BASIC_LAND_NAMES に含まれるか
+        const isBasicA = BASIC_LAND_NAMES.some(n => a.displayName.includes(n));
+        const isBasicB = BASIC_LAND_NAMES.some(n => b.displayName.includes(n));
+
+        if (isBasicA !== isBasicB) {
+            // 特殊地形(=非基本)を先に (isBasicAがfalseならaが特殊地形)
+            return isBasicA ? 1 : -1;
+        }
+
+        if (!isBasicA) {
+            // 【特殊地形同士】
+            // GIH WR (Tier) の高い順
+            const scoreA = getTierScore(a.tier);
+            const scoreB = getTierScore(b.tier);
+            if (scoreA !== scoreB) return scoreB - scoreA;
+            // 同じなら名前順
+            return a.displayName.localeCompare(b.displayName);
+        } else {
+            // 【基本地形同士】
+            // 1. 枚数の多い順
+            if (a.count !== b.count) return b.count - a.count;
+
+            // 2. WUBRG順 (平地 > 島 > 沼 > 山 > 森)
+            const wubrgOrder = ['Plains', '平地', 'Island', '島', 'Swamp', '沼', 'Mountain', '山', 'Forest', '森'];
+            // 順序インデックスを取得 (見つからない場合は後ろへ)
+            const idxA = wubrgOrder.findIndex(n => a.displayName.includes(n));
+            const idxB = wubrgOrder.findIndex(n => b.displayName.includes(n));
+
+            // 両方ともリストにある場合
+            if (idxA !== -1 && idxB !== -1) return idxA - idxB;
+            // 片方ならリストにある方が先
+            if (idxA !== -1) return -1;
+            if (idxB !== -1) return 1;
+
+            // それでも決まらなければ名前順
+            return a.displayName.localeCompare(b.displayName);
+        }
     });
 
     // --- Canvas描画処理 ---
