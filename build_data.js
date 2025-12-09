@@ -3,7 +3,7 @@ const path = require('path');
 const csv = require('csv-parser');
 
 const CARD_LIST_PATH = path.join(__dirname, 'mtg_TLA_list_fixed.txt'); // カードリストのパス
-const CSV_PATH = path.join(__dirname, 'card-ratings-2025-12-05.csv');
+const CSV_PATH = path.join(__dirname, 'ALL_card-ratings-2025-12-09.csv');
 const OUTPUT_PATH = path.join(__dirname, 'gamedata.js');
 const IMAGES_DIR = path.join(__dirname, 'cardlist');
 
@@ -92,7 +92,7 @@ function parseCardDatabase(filePath) {
             console.log(`  - enName: ${firstCardKey}`);
             console.log(`  - jpName: ${db[firstCardKey].jp}`);
         }
-        
+
         console.log(`カードリストのパース完了: ${Object.keys(db).length}枚`);
         resolve(db);
     });
@@ -122,7 +122,7 @@ function linkImageFiles(cardData) {
 
         console.log(`  - cardlistフォルダから ${imageFiles.length} 件のファイルを検出しました。`);
         console.log(`  - ファイル名（先頭3件）:`, imageFiles.slice(0, 3));
-        
+
         // 【修正要件3】正規化ロジックの微調整
         const normalize = (str) => {
             if (!str) return '';

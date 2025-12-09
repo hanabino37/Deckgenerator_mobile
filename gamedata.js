@@ -6,7 +6,7 @@ const MASTER_CARD_DATA = {
         "type": "ソーサリー --- 講義(Lesson)",
         "fileName": "アンの旅.png",
         "tier": "C",
-        "wr": "55.1%"
+        "wr": "55.2%"
     },
     "Energybending": {
         "jp": "エネルギーの技",
@@ -14,7 +14,7 @@ const MASTER_CARD_DATA = {
         "type": "インスタント --- 講義(Lesson)",
         "fileName": "エネルギーの技.png",
         "tier": "D-",
-        "wr": "50.7%"
+        "wr": "51.0%"
     },
     "Zuko's Exile": {
         "jp": "ズーコの追放",
@@ -22,7 +22,7 @@ const MASTER_CARD_DATA = {
         "type": "インスタント --- 講義(Lesson)",
         "fileName": "ズーコの追放.png",
         "tier": "F",
-        "wr": "49.0%"
+        "wr": "48.8%"
     },
     "Aang, the Last Airbender": {
         "jp": "最後の気のベンダー、アン",
@@ -30,7 +30,7 @@ const MASTER_CARD_DATA = {
         "type": "伝説のクリーチャー --- 人間(Human)・アバター(Avatar)・同盟者(Ally)",
         "fileName": "最後の気のベンダー、アン.png",
         "tier": "B+",
-        "wr": "61.2%"
+        "wr": "61.0%"
     },
     "Aang's Iceberg": {
         "jp": "アンの氷山",
@@ -38,7 +38,7 @@ const MASTER_CARD_DATA = {
         "type": "エンチャント",
         "fileName": "アンの氷山.png",
         "tier": "C+",
-        "wr": "56.9%"
+        "wr": "56.8%"
     },
     "Airbender Ascension": {
         "jp": "気のベンダーの位に至る",
@@ -54,7 +54,7 @@ const MASTER_CARD_DATA = {
         "type": "インスタント --- 講義(Lesson)",
         "fileName": "気のベンダーの逆転.png",
         "tier": "C-",
-        "wr": "54.3%"
+        "wr": "54.2%"
     },
     "Airbending Lesson": {
         "jp": "気の技の修行",
@@ -62,7 +62,7 @@ const MASTER_CARD_DATA = {
         "type": "インスタント --- 講義(Lesson)",
         "fileName": "気の技の修行.png",
         "tier": "C+",
-        "wr": "57.4%"
+        "wr": "57.1%"
     },
     "Appa, Loyal Sky Bison": {
         "jp": "忠実な空飛ぶバイソン、アッパ",
@@ -70,7 +70,7 @@ const MASTER_CARD_DATA = {
         "type": "伝説のクリーチャー --- バイソン(Bison)・同盟者(Ally)",
         "fileName": "忠実な空飛ぶバイソン、アッパ.png",
         "tier": "D",
-        "wr": "52.0%"
+        "wr": "52.2%"
     },
     "Appa, Steadfast Guardian": {
         "jp": "不動の守護者、アッパ",
@@ -85,16 +85,16 @@ const MASTER_CARD_DATA = {
         "cost": "(２)(W)",
         "type": "クリーチャー --- 人間(Human)・農民(Peasant)・同盟者(Ally)",
         "fileName": "アバターの大ファン.png",
-        "tier": "C",
-        "wr": "55.1%"
+        "tier": "C-",
+        "wr": "54.8%"
     },
     "Avatar's Wrath": {
         "jp": "アバターの怒り",
         "cost": "(２)(W)(W)",
         "type": "ソーサリー",
         "fileName": "アバターの怒り.png",
-        "tier": "C",
-        "wr": "55.0%"
+        "tier": "C-",
+        "wr": "54.8%"
     },
     "Compassionate Healer": {
         "jp": "慈悲深き癒し手",
@@ -102,7 +102,7 @@ const MASTER_CARD_DATA = {
         "type": "クリーチャー --- 人間(Human)・クレリック(Cleric)・同盟者(Ally)",
         "fileName": "慈悲深き癒し手.png",
         "tier": "C+",
-        "wr": "57.4%"
+        "wr": "57.2%"
     },
     "Curious Farm Animals": {
         "jp": "農場の奇妙な動物たち",
@@ -110,7 +110,7 @@ const MASTER_CARD_DATA = {
         "type": "クリーチャー --- 猪(Boar)・大鹿(Elk)・鳥(Bird)・雄牛(Ox)",
         "fileName": "農場の奇妙な動物たち.png",
         "tier": "D+",
-        "wr": "53.4%"
+        "wr": "53.5%"
     },
     "Destined Confrontation": {
         "jp": "宿命の対決",
@@ -126,39 +126,39 @@ const MASTER_CARD_DATA = {
         "type": "クリーチャー --- 人間(Human)・兵士(Soldier)・同盟者(Ally)",
         "fileName": "土の王国の牢番.png",
         "tier": "B+",
-        "wr": "61.1%"
+        "wr": "60.9%"
     },
     "Earth Kingdom Protectors": {
         "jp": "土の王国の守護者たち",
         "cost": "(W)",
         "type": "クリーチャー --- 人間(Human)・兵士(Soldier)・同盟者(Ally)",
         "fileName": "土の王国の守護者たち.png",
-        "tier": "B-",
-        "wr": "57.6%"
+        "tier": "C+",
+        "wr": "57.3%"
     },
     "Enter the Avatar State": {
         "jp": "アバターの境地へ",
         "cost": "(W)",
         "type": "インスタント --- 講義(Lesson)",
         "fileName": "アバターの境地へ.png",
-        "tier": "C+",
-        "wr": "56.4%"
+        "tier": "C",
+        "wr": "56.1%"
     },
     "Fancy Footwork": {
         "jp": "華麗な足さばき",
         "cost": "(２)(W)",
         "type": "インスタント --- 講義(Lesson)",
         "fileName": "華麗な足さばき.png",
-        "tier": "C-",
-        "wr": "53.7%"
+        "tier": "D+",
+        "wr": "53.4%"
     },
     "Gather the White Lotus": {
         "jp": "白蓮を集めよ",
         "cost": "(４)(W)",
         "type": "ソーサリー",
         "fileName": "白蓮を集めよ.png",
-        "tier": "B-",
-        "wr": "57.8%"
+        "tier": "C+",
+        "wr": "57.4%"
     },
     "Glider Kids": {
         "jp": "グライダーの子どもたち",
@@ -166,7 +166,7 @@ const MASTER_CARD_DATA = {
         "type": "クリーチャー --- 人間(Human)・操縦士(Pilot)・同盟者(Ally)",
         "fileName": "グライダーの子どもたち.png",
         "tier": "C+",
-        "wr": "56.5%"
+        "wr": "56.3%"
     },
     "Glider Staff": {
         "jp": "グライダーの杖",
@@ -174,7 +174,7 @@ const MASTER_CARD_DATA = {
         "type": "アーティファクト --- 装備品(Equipment)",
         "fileName": "グライダーの杖.png",
         "tier": "B-",
-        "wr": "58.4%"
+        "wr": "58.1%"
     },
     "Hakoda, Selfless Commander": {
         "jp": "無私なる指揮官、ハコダ",
@@ -182,7 +182,7 @@ const MASTER_CARD_DATA = {
         "type": "伝説のクリーチャー --- 人間(Human)・戦士(Warrior)・同盟者(Ally)",
         "fileName": "無私なる指揮官、ハコダ.png",
         "tier": "B-",
-        "wr": "58.4%"
+        "wr": "58.2%"
     },
     "Invasion Reinforcements": {
         "jp": "侵略の援軍",
@@ -190,15 +190,15 @@ const MASTER_CARD_DATA = {
         "type": "クリーチャー --- 人間(Human)・戦士(Warrior)・同盟者(Ally)",
         "fileName": "侵略の援軍.png",
         "tier": "C+",
-        "wr": "57.2%"
+        "wr": "56.9%"
     },
     "Jeong Jeong's Deserters": {
         "jp": "ジョン・ジョンの脱走兵たち",
         "cost": "(１)(W)",
         "type": "クリーチャー --- 人間(Human)・レベル(Rebel)・同盟者(Ally)",
         "fileName": "ジョン・ジョンの脱走兵たち.png",
-        "tier": "C+",
-        "wr": "56.2%"
+        "tier": "C",
+        "wr": "56.0%"
     },
     "Kyoshi Warriors": {
         "jp": "キヨシの戦士たち",
@@ -206,7 +206,7 @@ const MASTER_CARD_DATA = {
         "type": "クリーチャー --- 人間(Human)・戦士(Warrior)・同盟者(Ally)",
         "fileName": "キヨシの戦士たち.png",
         "tier": "C+",
-        "wr": "56.8%"
+        "wr": "56.6%"
     },
     "The Legend of Yangchen": {
         "jp": "ヤンチェンの伝説",
@@ -214,7 +214,7 @@ const MASTER_CARD_DATA = {
         "type": "エンチャント --- 英雄譚(Saga)",
         "fileName": "ヤンチェンの伝説.png",
         "tier": "A+",
-        "wr": "66.1%"
+        "wr": "66.0%"
     },
     "Avatar Yangchen": {
         "jp": "アバター・ヤンチェン",
@@ -238,23 +238,23 @@ const MASTER_CARD_DATA = {
         "type": "伝説のクリーチャー --- キツネザル(Lemur)・コウモリ(Bat)・同盟者(Ally)",
         "fileName": "空飛ぶ友だち、モモ.png",
         "tier": "B-",
-        "wr": "58.5%"
+        "wr": "58.3%"
     },
     "Momo, Playful Pet": {
         "jp": "いたずら好きのペット、モモ",
         "cost": "(W)",
         "type": "伝説のクリーチャー --- キツネザル(Lemur)・コウモリ(Bat)・同盟者(Ally)",
         "fileName": "いたずら好きのペット、モモ.png",
-        "tier": "B",
-        "wr": "58.8%"
+        "tier": "B-",
+        "wr": "58.4%"
     },
     "Path to Redemption": {
         "jp": "開放への道",
         "cost": "(１)(W)",
         "type": "エンチャント --- オーラ(Aura)",
         "fileName": "開放への道.png",
-        "tier": "B-",
-        "wr": "57.6%"
+        "tier": "C+",
+        "wr": "57.3%"
     },
     "Rabaroo Troop": {
         "jp": "ウサギルーの群れ",
@@ -262,7 +262,7 @@ const MASTER_CARD_DATA = {
         "type": "クリーチャー --- 兎(Rabbit)・カンガルー(Kangaroo)",
         "fileName": "ウサギルーの群れ.png",
         "tier": "D+",
-        "wr": "52.6%"
+        "wr": "52.5%"
     },
     "Razor Rings": {
         "jp": "水刃連環",
@@ -270,7 +270,7 @@ const MASTER_CARD_DATA = {
         "type": "インスタント",
         "fileName": "水刃連環.png",
         "tier": "C",
-        "wr": "55.9%"
+        "wr": "55.8%"
     },
     "Sandbenders' Storm": {
         "jp": "砂のベンダーの嵐",
@@ -278,7 +278,7 @@ const MASTER_CARD_DATA = {
         "type": "インスタント",
         "fileName": "砂のベンダーの嵐.png",
         "tier": "D+",
-        "wr": "53.0%"
+        "wr": "52.7%"
     },
     "South Pole Voyager": {
         "jp": "南極の航海者",
@@ -286,7 +286,7 @@ const MASTER_CARD_DATA = {
         "type": "クリーチャー --- 人間(Human)・スカウト(Scout)・同盟者(Ally)",
         "fileName": "南極の航海者.png",
         "tier": "B+",
-        "wr": "61.2%"
+        "wr": "61.1%"
     },
     "Southern Air Temple": {
         "jp": "南の気の寺",
@@ -294,15 +294,15 @@ const MASTER_CARD_DATA = {
         "type": "伝説のエンチャント --- 祭殿(Shrine)",
         "fileName": "南の気の寺.png",
         "tier": "D-",
-        "wr": "50.8%"
+        "wr": "50.1%"
     },
     "Suki, Courageous Rescuer": {
         "jp": "勇敢なる救出者、スキ",
         "cost": "(１)(W)(W)",
         "type": "伝説のクリーチャー --- 人間(Human)・戦士(Warrior)・同盟者(Ally)",
         "fileName": "勇敢なる救出者、スキ.png",
-        "tier": "A",
-        "wr": "62.5%"
+        "tier": "A-",
+        "wr": "62.3%"
     },
     "Team Avatar": {
         "jp": "チーム・アバター",
@@ -310,7 +310,7 @@ const MASTER_CARD_DATA = {
         "type": "エンチャント",
         "fileName": "チーム・アバター.png",
         "tier": "C-",
-        "wr": "54.9%"
+        "wr": "54.8%"
     },
     "United Front": {
         "jp": "共同戦線",
@@ -318,7 +318,7 @@ const MASTER_CARD_DATA = {
         "type": "ソーサリー",
         "fileName": "共同戦線.png",
         "tier": "A+",
-        "wr": "65.6%"
+        "wr": "65.4%"
     },
     "Vengeful Villagers": {
         "jp": "復讐心に燃えた村人",
@@ -326,23 +326,23 @@ const MASTER_CARD_DATA = {
         "type": "クリーチャー --- 人間(Human)・市民(Citizen)",
         "fileName": "復讐心に燃えた村人.png",
         "tier": "D-",
-        "wr": "50.1%"
+        "wr": "50.0%"
     },
     "Water Tribe Captain": {
         "jp": "水の部族の隊長",
         "cost": "(２)(W)",
         "type": "クリーチャー --- 人間(Human)・兵士(Soldier)・同盟者(Ally)",
         "fileName": "水の部族の隊長.png",
-        "tier": "C+",
-        "wr": "56.2%"
+        "tier": "C",
+        "wr": "56.0%"
     },
     "Water Tribe Rallier": {
         "jp": "水の部族の結集者",
         "cost": "(１)(W)",
         "type": "クリーチャー --- 人間(Human)・兵士(Soldier)・同盟者(Ally)",
         "fileName": "水の部族の結集者.png",
-        "tier": "B+",
-        "wr": "60.2%"
+        "tier": "B",
+        "wr": "59.9%"
     },
     "Yip Yip!": {
         "jp": "ヤアヤア！",
@@ -350,7 +350,7 @@ const MASTER_CARD_DATA = {
         "type": "インスタント --- 講義(Lesson)",
         "fileName": "ヤアヤア！.png",
         "tier": "C+",
-        "wr": "57.1%"
+        "wr": "56.8%"
     },
     "Accumulate Wisdom": {
         "jp": "積み重ねられた叡智",
@@ -358,7 +358,7 @@ const MASTER_CARD_DATA = {
         "type": "インスタント --- 講義(Lesson)",
         "fileName": "積み重ねられた叡智.png",
         "tier": "C+",
-        "wr": "57.0%"
+        "wr": "56.8%"
     },
     "Benevolent River Spirit": {
         "jp": "心優しき紅小町",
@@ -366,7 +366,7 @@ const MASTER_CARD_DATA = {
         "type": "クリーチャー --- スピリット(Spirit)",
         "fileName": "心優しき紅小町.png",
         "tier": "C+",
-        "wr": "57.3%"
+        "wr": "57.2%"
     },
     "Boomerang Basics": {
         "jp": "ブーメランの基礎",
@@ -374,7 +374,7 @@ const MASTER_CARD_DATA = {
         "type": "ソーサリー --- 講義(Lesson)",
         "fileName": "ブーメランの基礎.png",
         "tier": "C+",
-        "wr": "57.1%"
+        "wr": "57.0%"
     },
     "Crashing Wave": {
         "jp": "打ち寄せる波濤",
@@ -390,7 +390,7 @@ const MASTER_CARD_DATA = {
         "type": "ソーサリー",
         "fileName": "エンバー島の上演.png",
         "tier": "D+",
-        "wr": "52.5%"
+        "wr": "52.7%"
     },
     "First-Time Flyer": {
         "jp": "初めての飛行者",
@@ -398,7 +398,7 @@ const MASTER_CARD_DATA = {
         "type": "クリーチャー --- 人間(Human)・操縦士(Pilot)・同盟者(Ally)",
         "fileName": "初めての飛行者.png",
         "tier": "C+",
-        "wr": "56.6%"
+        "wr": "56.5%"
     },
     "Flexible Waterbender": {
         "jp": "方円に随う水のベンダー",
@@ -406,7 +406,7 @@ const MASTER_CARD_DATA = {
         "type": "クリーチャー --- 人間(Human)・戦士(Warrior)・同盟者(Ally)",
         "fileName": "方円に随う水のベンダー.png",
         "tier": "D+",
-        "wr": "53.0%"
+        "wr": "53.1%"
     },
     "Forecasting Fortune Teller": {
         "jp": "万事お見通しの占い師",
@@ -414,7 +414,7 @@ const MASTER_CARD_DATA = {
         "type": "クリーチャー --- 人間(Human)・アドバイザー(Advisor)・同盟者(Ally)",
         "fileName": "万事お見通しの占い師.png",
         "tier": "B-",
-        "wr": "57.9%"
+        "wr": "57.7%"
     },
     "Geyser Leaper": {
         "jp": "噴流に乗りて跳ぶ者",
@@ -422,7 +422,7 @@ const MASTER_CARD_DATA = {
         "type": "クリーチャー --- 人間(Human)・戦士(Warrior)・同盟者(Ally)",
         "fileName": "噴流に乗りて跳ぶ者.png",
         "tier": "D",
-        "wr": "51.5%"
+        "wr": "51.6%"
     },
     "Giant Koi": {
         "jp": "巨大鯉",
@@ -430,7 +430,7 @@ const MASTER_CARD_DATA = {
         "type": "クリーチャー --- 魚(Fish)",
         "fileName": "巨大鯉.png",
         "tier": "C-",
-        "wr": "54.1%"
+        "wr": "54.0%"
     },
     "Gran-Gran": {
         "jp": "ばあば",
@@ -438,7 +438,7 @@ const MASTER_CARD_DATA = {
         "type": "伝説のクリーチャー --- 人間(Human)・農民(Peasant)・同盟者(Ally)",
         "fileName": "ばあば.png",
         "tier": "B",
-        "wr": "59.4%"
+        "wr": "59.5%"
     },
     "Honest Work": {
         "jp": "実直な仕事",
@@ -446,7 +446,7 @@ const MASTER_CARD_DATA = {
         "type": "エンチャント --- オーラ(Aura)",
         "fileName": "実直な仕事.png",
         "tier": "D-",
-        "wr": "50.7%"
+        "wr": "50.4%"
     },
     "Iguana Parrot": {
         "jp": "イグアナオウム",
@@ -454,7 +454,7 @@ const MASTER_CARD_DATA = {
         "type": "クリーチャー --- トカゲ(Lizard)・鳥(Bird)・海賊(Pirate)",
         "fileName": "イグアナオウム.png",
         "tier": "C-",
-        "wr": "54.3%"
+        "wr": "54.1%"
     },
     "Invasion Submersible": {
         "jp": "侵略の潜水艇",
@@ -462,7 +462,7 @@ const MASTER_CARD_DATA = {
         "type": "アーティファクト --- 機体(Vehicle)",
         "fileName": "侵略の潜水艇.png",
         "tier": "A-",
-        "wr": "62.2%"
+        "wr": "62.0%"
     },
     "It'll Quench Ya!": {
         "jp": "飲めば潤う！",
@@ -470,7 +470,7 @@ const MASTER_CARD_DATA = {
         "type": "インスタント --- 講義(Lesson)",
         "fileName": "飲めば潤う！.png",
         "tier": "B-",
-        "wr": "58.5%"
+        "wr": "58.3%"
     },
     "Katara, Bending Prodigy": {
         "jp": "水の技の天才、カタラ",
@@ -478,15 +478,15 @@ const MASTER_CARD_DATA = {
         "type": "伝説のクリーチャー --- 人間(Human)・戦士(Warrior)・同盟者(Ally)",
         "fileName": "水の技の天才、カタラ.png",
         "tier": "C",
-        "wr": "55.8%"
+        "wr": "55.6%"
     },
     "Knowledge Seeker": {
         "jp": "知識探し",
         "cost": "(１)(U)",
         "type": "クリーチャー --- 狐(Fox)・スピリット(Spirit)",
         "fileName": "知識探し.png",
-        "tier": "B",
-        "wr": "58.8%"
+        "tier": "B-",
+        "wr": "58.6%"
     },
     "The Legend of Kuruk": {
         "jp": "クルクの伝説",
@@ -494,7 +494,7 @@ const MASTER_CARD_DATA = {
         "type": "エンチャント --- 英雄譚(Saga)",
         "fileName": "クルクの伝説.png",
         "tier": "A+",
-        "wr": "66.2%"
+        "wr": "66.3%"
     },
     "Avatar Kuruk": {
         "jp": "アバター・クルク",
@@ -518,7 +518,7 @@ const MASTER_CARD_DATA = {
         "type": "伝説のクリーチャー --- 人間(Human)・アドバイザー(Advisor)・同盟者(Ally)",
         "fileName": "パク師.png",
         "tier": "D+",
-        "wr": "52.9%"
+        "wr": "52.6%"
     },
     "The Mechanist, Aerial Artisan": {
         "jp": "航空職人、機械技師",
@@ -534,7 +534,7 @@ const MASTER_CARD_DATA = {
         "type": "クリーチャー --- 人間(Human)・兵士(Soldier)・同盟者(Ally)",
         "fileName": "北極の巡視隊.png",
         "tier": "C",
-        "wr": "55.8%"
+        "wr": "55.7%"
     },
     "Octopus Form": {
         "jp": "タコの型",
@@ -550,7 +550,7 @@ const MASTER_CARD_DATA = {
         "type": "クリーチャー --- カワウソ(Otter)・鳥(Bird)",
         "fileName": "カワウソペンギン.png",
         "tier": "C",
-        "wr": "55.3%"
+        "wr": "55.0%"
     },
     "Rowdy Snowballers": {
         "jp": "盛り上がる雪玉投げ",
@@ -558,7 +558,7 @@ const MASTER_CARD_DATA = {
         "type": "クリーチャー --- 人間(Human)・農民(Peasant)・同盟者(Ally)",
         "fileName": "盛り上がる雪玉投げ.png",
         "tier": "D",
-        "wr": "51.7%"
+        "wr": "51.4%"
     },
     "Secret of Bloodbending": {
         "jp": "血の技の秘密",
@@ -566,7 +566,7 @@ const MASTER_CARD_DATA = {
         "type": "ソーサリー --- 講義(Lesson)",
         "fileName": "血の技の秘密.png",
         "tier": "F",
-        "wr": "47.5%"
+        "wr": "48.4%"
     },
     "Serpent of the Pass": {
         "jp": "峠の大蛇",
@@ -574,7 +574,7 @@ const MASTER_CARD_DATA = {
         "type": "クリーチャー --- 海蛇(Serpent)",
         "fileName": "峠の大蛇.png",
         "tier": "D+",
-        "wr": "53.3%"
+        "wr": "53.1%"
     },
     "Sokka's Haiku": {
         "jp": "サカの俳句",
@@ -582,7 +582,7 @@ const MASTER_CARD_DATA = {
         "type": "インスタント --- 講義(Lesson)",
         "fileName": "サカの俳句.png",
         "tier": "C+",
-        "wr": "56.7%"
+        "wr": "56.8%"
     },
     "The Spirit Oasis": {
         "jp": "精霊のオアシス",
@@ -590,7 +590,7 @@ const MASTER_CARD_DATA = {
         "type": "伝説のエンチャント --- 祭殿(Shrine)",
         "fileName": "精霊のオアシス.png",
         "tier": "C-",
-        "wr": "54.2%"
+        "wr": "54.0%"
     },
     "Spirit Water Revival": {
         "jp": "精霊の水の蘇生",
@@ -598,7 +598,7 @@ const MASTER_CARD_DATA = {
         "type": "ソーサリー",
         "fileName": "精霊の水の蘇生.png",
         "tier": "C",
-        "wr": "55.9%"
+        "wr": "55.7%"
     },
     "Teo, Spirited Glider": {
         "jp": "元気なグライダー乗り、テオ",
@@ -606,15 +606,15 @@ const MASTER_CARD_DATA = {
         "type": "伝説のクリーチャー --- 人間(Human)・操縦士(Pilot)・同盟者(Ally)",
         "fileName": "元気なグライダー乗り、テオ.png",
         "tier": "C+",
-        "wr": "57.1%"
+        "wr": "57.0%"
     },
     "Tiger-Seal": {
         "jp": "トラアザラシ",
         "cost": "(U)",
         "type": "クリーチャー --- 猫(Cat)・アザラシ(Seal)",
         "fileName": "トラアザラシ.png",
-        "tier": "C-",
-        "wr": "54.3%"
+        "tier": "D+",
+        "wr": "53.4%"
     },
     "Ty Lee, Chi Blocker": {
         "jp": "点穴使い、タイリー",
@@ -622,7 +622,7 @@ const MASTER_CARD_DATA = {
         "type": "伝説のクリーチャー --- 人間(Human)・パフォーマー(Performer)・同盟者(Ally)",
         "fileName": "点穴使い、タイリー.png",
         "tier": "B+",
-        "wr": "60.0%"
+        "wr": "60.1%"
     },
     "The Unagi of Kyoshi Island": {
         "jp": "キヨシ島の大ウナギ",
@@ -638,7 +638,7 @@ const MASTER_CARD_DATA = {
         "type": "伝説のクリーチャー --- 鳥(Bird)・スピリット(Spirit)",
         "fileName": "司書、ワン・シー・トン.png",
         "tier": "A+",
-        "wr": "65.2%"
+        "wr": "65.4%"
     },
     "Waterbender Ascension": {
         "jp": "水のベンダーの位に至る",
@@ -646,7 +646,7 @@ const MASTER_CARD_DATA = {
         "type": "エンチャント",
         "fileName": "水のベンダーの位に至る.png",
         "tier": "F",
-        "wr": "46.3%"
+        "wr": "45.9%"
     },
     "Waterbending Lesson": {
         "jp": "水の技の修行",
@@ -661,8 +661,8 @@ const MASTER_CARD_DATA = {
         "cost": "(１)(U)",
         "type": "アーティファクト",
         "fileName": "水の技の奥義書.png",
-        "tier": "C-",
-        "wr": "53.8%"
+        "tier": "D+",
+        "wr": "53.5%"
     },
     "Watery Grasp": {
         "jp": "水のつかみ技",
@@ -670,7 +670,7 @@ const MASTER_CARD_DATA = {
         "type": "エンチャント --- オーラ(Aura)",
         "fileName": "水のつかみ技.png",
         "tier": "B-",
-        "wr": "58.3%"
+        "wr": "58.2%"
     },
     "Yue, the Moon Spirit": {
         "jp": "月の精霊、ユエ",
@@ -678,7 +678,7 @@ const MASTER_CARD_DATA = {
         "type": "伝説のクリーチャー --- スピリット(Spirit)・同盟者(Ally)",
         "fileName": "月の精霊、ユエ.png",
         "tier": "D+",
-        "wr": "53.1%"
+        "wr": "53.0%"
     },
     "Azula Always Lies": {
         "jp": "アズーラは嘘つきだ",
@@ -702,7 +702,7 @@ const MASTER_CARD_DATA = {
         "type": "クリーチャー --- 人間(Human)・市民(Citizen)",
         "fileName": "甲虫兜の商人.png",
         "tier": "D",
-        "wr": "51.4%"
+        "wr": "51.6%"
     },
     "Boiling Rock Rioter": {
         "jp": "釜茹岩の暴動者",
@@ -710,7 +710,7 @@ const MASTER_CARD_DATA = {
         "type": "クリーチャー --- 人間(Human)・ならず者(Rogue)・同盟者(Ally)",
         "fileName": "釜茹岩の暴動者.png",
         "tier": "C",
-        "wr": "56.0%"
+        "wr": "56.1%"
     },
     "Buzzard-Wasp Colony": {
         "jp": "ハゲタカバチの巣",
@@ -718,7 +718,7 @@ const MASTER_CARD_DATA = {
         "type": "クリーチャー --- 鳥(Bird)・昆虫(Insect)",
         "fileName": "ハゲタカバチの巣.png",
         "tier": "D-",
-        "wr": "50.7%"
+        "wr": "50.6%"
     },
     "Callous Inspector": {
         "jp": "無慈悲な監査官",
@@ -734,7 +734,7 @@ const MASTER_CARD_DATA = {
         "type": "クリーチャー --- 蜘蛛(Spider)・ビースト(Beast)",
         "fileName": "ケイコクオオグモ.png",
         "tier": "C-",
-        "wr": "54.7%"
+        "wr": "54.9%"
     },
     "Cat-Gator": {
         "jp": "ナマズワニ",
@@ -742,7 +742,7 @@ const MASTER_CARD_DATA = {
         "type": "クリーチャー --- 魚(Fish)・クロコダイル(Crocodile)",
         "fileName": "ナマズワニ.png",
         "tier": "B-",
-        "wr": "57.6%"
+        "wr": "57.7%"
     },
     "Corrupt Court Official": {
         "jp": "堕落した廷臣",
@@ -750,15 +750,15 @@ const MASTER_CARD_DATA = {
         "type": "クリーチャー --- 人間(Human)・アドバイザー(Advisor)",
         "fileName": "堕落した廷臣.png",
         "tier": "C",
-        "wr": "55.9%"
+        "wr": "56.0%"
     },
     "Dai Li Indoctrination": {
         "jp": "ダイ・リーの洗脳",
         "cost": "(１)(B)",
         "type": "ソーサリー --- 講義(Lesson)",
         "fileName": "ダイ・リーの洗脳.png",
-        "tier": "D",
-        "wr": "52.4%"
+        "tier": "D+",
+        "wr": "52.9%"
     },
     "Day of Black Sun": {
         "jp": "黒い太陽の日",
@@ -766,7 +766,7 @@ const MASTER_CARD_DATA = {
         "type": "ソーサリー",
         "fileName": "黒い太陽の日.png",
         "tier": "B+",
-        "wr": "60.1%"
+        "wr": "60.2%"
     },
     "Deadly Precision": {
         "jp": "正確無比",
@@ -774,7 +774,7 @@ const MASTER_CARD_DATA = {
         "type": "ソーサリー",
         "fileName": "正確無比.png",
         "tier": "C+",
-        "wr": "56.6%"
+        "wr": "56.5%"
     },
     "Epic Downfall": {
         "jp": "壮大な破滅",
@@ -790,7 +790,7 @@ const MASTER_CARD_DATA = {
         "type": "インスタント",
         "fileName": "命取りの地割れ.png",
         "tier": "F",
-        "wr": "46.5%"
+        "wr": "46.7%"
     },
     "The Fire Nation Drill": {
         "jp": "火の国のドリル",
@@ -798,7 +798,7 @@ const MASTER_CARD_DATA = {
         "type": "伝説のアーティファクト --- 機体(Vehicle)",
         "fileName": "火の国のドリル.png",
         "tier": "A+",
-        "wr": "67.0%"
+        "wr": "66.9%"
     },
     "Fire Nation Engineer": {
         "jp": "火の国の技師",
@@ -806,7 +806,7 @@ const MASTER_CARD_DATA = {
         "type": "クリーチャー --- 人間(Human)・工匠(Artificer)",
         "fileName": "火の国の技師.png",
         "tier": "C",
-        "wr": "55.6%"
+        "wr": "55.9%"
     },
     "Fire Navy Trebuchet": {
         "jp": "火の国の海軍の投石機",
@@ -822,7 +822,7 @@ const MASTER_CARD_DATA = {
         "type": "クリーチャー --- 人間(Human)・レインジャー(Ranger)・同盟者(Ally)",
         "fileName": "霧の沼地の狩人.png",
         "tier": "D+",
-        "wr": "52.8%"
+        "wr": "53.0%"
     },
     "Foggy Swamp Visions": {
         "jp": "霧の沼地の幻視",
@@ -830,7 +830,7 @@ const MASTER_CARD_DATA = {
         "type": "ソーサリー",
         "fileName": "霧の沼地の幻視.png",
         "tier": "F",
-        "wr": "46.3%"
+        "wr": "46.2%"
     },
     "Heartless Act": {
         "jp": "無情な行動",
@@ -854,7 +854,7 @@ const MASTER_CARD_DATA = {
         "type": "クリーチャー --- 人間(Human)・アドバイザー(Advisor)",
         "fileName": "大勢のうちの一人、ジュー・ディー.png",
         "tier": "C",
-        "wr": "55.3%"
+        "wr": "55.4%"
     },
     "June, Bounty Hunter": {
         "jp": "賞金稼ぎ、ジューン",
@@ -870,7 +870,7 @@ const MASTER_CARD_DATA = {
         "type": "伝説のクリーチャー --- 多相の戦士(Shapeshifter)・スピリット(Spirit)",
         "fileName": "顔泥棒、コー.png",
         "tier": "A",
-        "wr": "63.2%"
+        "wr": "63.6%"
     },
     "Lo and Li, Twin Tutors": {
         "jp": "双子の師、ローとリー",
@@ -878,7 +878,7 @@ const MASTER_CARD_DATA = {
         "type": "伝説のクリーチャー --- 人間(Human)・アドバイザー(Advisor)",
         "fileName": "双子の師、ローとリー.png",
         "tier": "C-",
-        "wr": "54.1%"
+        "wr": "54.4%"
     },
     "Mai, Scornful Striker": {
         "jp": "見下す高手、メイ",
@@ -886,7 +886,7 @@ const MASTER_CARD_DATA = {
         "type": "伝説のクリーチャー --- 人間(Human)・貴族(Noble)・同盟者(Ally)",
         "fileName": "見下す高手、メイ.png",
         "tier": "C-",
-        "wr": "54.2%"
+        "wr": "53.7%"
     },
     "Merchant of Many Hats": {
         "jp": "数多の帽子の商人",
@@ -901,8 +901,8 @@ const MASTER_CARD_DATA = {
         "cost": "(B)",
         "type": "伝説のエンチャント --- 祭殿(Shrine)",
         "fileName": "北の気の寺.png",
-        "tier": "D",
-        "wr": "51.9%"
+        "tier": "D-",
+        "wr": "51.1%"
     },
     "Obsessive Pursuit": {
         "jp": "妄執の追跡行",
@@ -910,7 +910,7 @@ const MASTER_CARD_DATA = {
         "type": "エンチャント",
         "fileName": "妄執の追跡行.png",
         "tier": "B-",
-        "wr": "58.5%"
+        "wr": "58.4%"
     },
     "Ozai's Cruelty": {
         "jp": "オザイの酷薄",
@@ -918,7 +918,7 @@ const MASTER_CARD_DATA = {
         "type": "ソーサリー --- 講義(Lesson)",
         "fileName": "オザイの酷薄.png",
         "tier": "C",
-        "wr": "55.0%"
+        "wr": "55.3%"
     },
     "Phoenix Fleet Airship": {
         "jp": "不死鳥艦隊の飛行船",
@@ -926,7 +926,7 @@ const MASTER_CARD_DATA = {
         "type": "アーティファクト --- 機体(Vehicle)",
         "fileName": "不死鳥艦隊の飛行船.png",
         "tier": "B+",
-        "wr": "60.8%"
+        "wr": "60.9%"
     },
     "Pirate Peddlers": {
         "jp": "海賊の行商人",
@@ -941,8 +941,8 @@ const MASTER_CARD_DATA = {
         "cost": "(２)(B)",
         "type": "クリーチャー --- 鳥(Bird)・暗殺者(Assassin)",
         "fileName": "カラスワシ.png",
-        "tier": "A-",
-        "wr": "62.4%"
+        "tier": "A",
+        "wr": "62.6%"
     },
     "The Rise of Sozin": {
         "jp": "ソジンの台頭",
@@ -950,7 +950,7 @@ const MASTER_CARD_DATA = {
         "type": "エンチャント --- 英雄譚(Saga)",
         "fileName": "ソジンの台頭.png",
         "tier": "A+",
-        "wr": "67.5%"
+        "wr": "67.7%"
     },
     "Fire Lord Sozin": {
         "jp": "火の王ソジン",
@@ -966,7 +966,7 @@ const MASTER_CARD_DATA = {
         "type": "ソーサリー --- 講義(Lesson)",
         "fileName": "滅びの水の技.png",
         "tier": "D",
-        "wr": "52.2%"
+        "wr": "52.1%"
     },
     "Sold Out": {
         "jp": "完売",
@@ -990,7 +990,7 @@ const MASTER_CARD_DATA = {
         "type": "アーティファクト --- 機体(Vehicle)",
         "fileName": "ツンドラ戦車.png",
         "tier": "C-",
-        "wr": "54.2%"
+        "wr": "54.1%"
     },
     "Wolfbat": {
         "jp": "オオカミコウモリ",
@@ -998,7 +998,7 @@ const MASTER_CARD_DATA = {
         "type": "クリーチャー --- 狼(Wolf)・コウモリ(Bat)",
         "fileName": "オオカミコウモリ.png",
         "tier": "C-",
-        "wr": "54.0%"
+        "wr": "53.7%"
     },
     "Zuko's Conviction": {
         "jp": "ズーコの決心",
@@ -1006,7 +1006,7 @@ const MASTER_CARD_DATA = {
         "type": "インスタント",
         "fileName": "ズーコの決心.png",
         "tier": "D",
-        "wr": "51.9%"
+        "wr": "51.7%"
     },
     "Boar-q-pine": {
         "jp": "イノアラシ",
@@ -1014,15 +1014,15 @@ const MASTER_CARD_DATA = {
         "type": "クリーチャー --- 猪(Boar)・ヤマアラシ(Porcupine)",
         "fileName": "イノアラシ.png",
         "tier": "D",
-        "wr": "51.8%"
+        "wr": "51.6%"
     },
     "Bumi Bash": {
         "jp": "ブミの叩きつけ",
         "cost": "(３)(R)",
         "type": "ソーサリー",
         "fileName": "ブミの叩きつけ.png",
-        "tier": "D+",
-        "wr": "52.6%"
+        "tier": "D",
+        "wr": "52.4%"
     },
     "The Cave of Two Lovers": {
         "jp": "恋人たちのトンネル",
@@ -1030,7 +1030,7 @@ const MASTER_CARD_DATA = {
         "type": "エンチャント --- 英雄譚(Saga)",
         "fileName": "恋人たちのトンネル.png",
         "tier": "B",
-        "wr": "59.8%"
+        "wr": "59.7%"
     },
     "Combustion Man": {
         "jp": "爆裂男",
@@ -1038,15 +1038,15 @@ const MASTER_CARD_DATA = {
         "type": "伝説のクリーチャー --- 人間(Human)・暗殺者(Assassin)",
         "fileName": "爆裂男.png",
         "tier": "D",
-        "wr": "52.2%"
+        "wr": "52.1%"
     },
     "Combustion Technique": {
         "jp": "爆裂の技",
         "cost": "(１)(R)",
         "type": "インスタント --- 講義(Lesson)",
         "fileName": "爆裂の技.png",
-        "tier": "B",
-        "wr": "58.8%"
+        "tier": "B-",
+        "wr": "58.7%"
     },
     "Crescent Island Temple": {
         "jp": "三日月の島の寺",
@@ -1054,7 +1054,7 @@ const MASTER_CARD_DATA = {
         "type": "伝説のエンチャント --- 祭殿(Shrine)",
         "fileName": "三日月の島の寺.png",
         "tier": "C-",
-        "wr": "54.3%"
+        "wr": "54.0%"
     },
     "Cunning Maneuver": {
         "jp": "奇抜な動き",
@@ -1062,7 +1062,7 @@ const MASTER_CARD_DATA = {
         "type": "インスタント",
         "fileName": "奇抜な動き.png",
         "tier": "C-",
-        "wr": "54.1%"
+        "wr": "54.2%"
     },
     "Deserter's Disciple": {
         "jp": "脱走者の門弟",
@@ -1086,7 +1086,7 @@ const MASTER_CARD_DATA = {
         "type": "インスタント",
         "fileName": "火の国の攻撃.png",
         "tier": "C-",
-        "wr": "54.8%"
+        "wr": "54.9%"
     },
     "Fire Nation Cadets": {
         "jp": "火の国の士官候補生",
@@ -1094,7 +1094,7 @@ const MASTER_CARD_DATA = {
         "type": "クリーチャー --- 人間(Human)・兵士(Soldier)",
         "fileName": "火の国の士官候補生.png",
         "tier": "C+",
-        "wr": "56.4%"
+        "wr": "56.5%"
     },
     "Fire Nation Raider": {
         "jp": "火の国の侵略部隊",
@@ -1102,7 +1102,7 @@ const MASTER_CARD_DATA = {
         "type": "クリーチャー --- 人間(Human)・兵士(Soldier)",
         "fileName": "火の国の侵略部隊.png",
         "tier": "D-",
-        "wr": "50.9%"
+        "wr": "50.7%"
     },
     "Fire Sages": {
         "jp": "火の賢者",
@@ -1110,7 +1110,7 @@ const MASTER_CARD_DATA = {
         "type": "クリーチャー --- 人間(Human)・クレリック(Cleric)",
         "fileName": "火の賢者.png",
         "tier": "C",
-        "wr": "55.8%"
+        "wr": "56.0%"
     },
     "Firebender Ascension": {
         "jp": "火のベンダーの位に至る",
@@ -1118,7 +1118,7 @@ const MASTER_CARD_DATA = {
         "type": "エンチャント",
         "fileName": "火のベンダーの位に至る.png",
         "tier": "D+",
-        "wr": "53.3%"
+        "wr": "53.1%"
     },
     "Firebending Lesson": {
         "jp": "火の技の修行",
@@ -1126,7 +1126,7 @@ const MASTER_CARD_DATA = {
         "type": "インスタント --- 講義(Lesson)",
         "fileName": "火の技の修行.png",
         "tier": "B-",
-        "wr": "58.4%"
+        "wr": "58.3%"
     },
     "Firebending Student": {
         "jp": "火の技の学び手",
@@ -1134,7 +1134,7 @@ const MASTER_CARD_DATA = {
         "type": "クリーチャー --- 人間(Human)・モンク(Monk)",
         "fileName": "火の技の学び手.png",
         "tier": "D",
-        "wr": "51.5%"
+        "wr": "51.3%"
     },
     "How to Start a Riot": {
         "jp": "暴動の起こし方",
@@ -1142,7 +1142,7 @@ const MASTER_CARD_DATA = {
         "type": "インスタント --- 講義(Lesson)",
         "fileName": "暴動の起こし方.png",
         "tier": "D",
-        "wr": "52.0%"
+        "wr": "51.9%"
     },
     "Iroh's Demonstration": {
         "jp": "アイローの表演",
@@ -1158,7 +1158,7 @@ const MASTER_CARD_DATA = {
         "type": "伝説のクリーチャー --- 人間(Human)・レベル(Rebel)・同盟者(Ally)",
         "fileName": "脱走者、ジョン・ジョン.png",
         "tier": "D",
-        "wr": "52.2%"
+        "wr": "52.3%"
     },
     "Jet's Brainwashing": {
         "jp": "ジェットの洗脳",
@@ -1166,7 +1166,7 @@ const MASTER_CARD_DATA = {
         "type": "ソーサリー",
         "fileName": "ジェットの洗脳.png",
         "tier": "D+",
-        "wr": "52.7%"
+        "wr": "52.9%"
     },
     "The Last Agni Kai": {
         "jp": "最後のアグニカイ",
@@ -1174,15 +1174,15 @@ const MASTER_CARD_DATA = {
         "type": "インスタント",
         "fileName": "最後のアグニカイ.png",
         "tier": "F",
-        "wr": "49.2%"
+        "wr": "49.6%"
     },
     "The Legend of Roku": {
         "jp": "ロクの伝説",
         "cost": "(２)(R)(R)",
         "type": "エンチャント --- 英雄譚(Saga)",
         "fileName": "ロクの伝説.png",
-        "tier": "A",
-        "wr": "62.6%"
+        "tier": "A-",
+        "wr": "62.3%"
     },
     "Avatar Roku": {
         "jp": "アバター・ロク",
@@ -1222,7 +1222,7 @@ const MASTER_CARD_DATA = {
         "type": "ソーサリー --- 講義(Lesson)",
         "fileName": "自由の代価.png",
         "tier": "F",
-        "wr": "49.0%"
+        "wr": "49.2%"
     },
     "Ran and Shaw": {
         "jp": "ランとシャオ",
@@ -1230,7 +1230,7 @@ const MASTER_CARD_DATA = {
         "type": "伝説のクリーチャー --- ドラゴン(Dragon)",
         "fileName": "ランとシャオ.png",
         "tier": "B-",
-        "wr": "58.4%"
+        "wr": "58.1%"
     },
     "Redirect Lightning": {
         "jp": "雷逸らし",
@@ -1238,7 +1238,7 @@ const MASTER_CARD_DATA = {
         "type": "インスタント --- 講義(Lesson)",
         "fileName": "雷逸らし.png",
         "tier": "D-",
-        "wr": "50.6%"
+        "wr": "50.7%"
     },
     "Rough Rhino Cavalry": {
         "jp": "荒サイ騎兵隊",
@@ -1246,7 +1246,7 @@ const MASTER_CARD_DATA = {
         "type": "クリーチャー --- 人間(Human)・傭兵(Mercenary)",
         "fileName": "荒サイ騎兵隊.png",
         "tier": "D",
-        "wr": "51.4%"
+        "wr": "51.3%"
     },
     "Solstice Revelations": {
         "jp": "冬至に明かされる秘密",
@@ -1254,7 +1254,7 @@ const MASTER_CARD_DATA = {
         "type": "インスタント --- 講義(Lesson)",
         "fileName": "冬至に明かされる秘密.png",
         "tier": "D-",
-        "wr": "50.4%"
+        "wr": "50.8%"
     },
     "Sozin's Comet": {
         "jp": "ソジンの彗星",
@@ -1286,23 +1286,23 @@ const MASTER_CARD_DATA = {
         "type": "アーティファクト --- 装備品(Equipment)",
         "fileName": "双刀.png",
         "tier": "C",
-        "wr": "56.0%"
+        "wr": "55.9%"
     },
     "Ty Lee, Artful Acrobat": {
         "jp": "巧みな軽業師、タイリー",
         "cost": "(２)(R)",
         "type": "伝説のクリーチャー --- 人間(Human)・パフォーマー(Performer)",
         "fileName": "巧みな軽業師、タイリー.png",
-        "tier": "D+",
-        "wr": "53.6%"
+        "tier": "C-",
+        "wr": "53.7%"
     },
     "War Balloon": {
         "jp": "戦気球",
         "cost": "(２)(R)",
         "type": "アーティファクト --- 機体(Vehicle)",
         "fileName": "戦気球.png",
-        "tier": "C-",
-        "wr": "53.7%"
+        "tier": "D+",
+        "wr": "53.4%"
     },
     "Wartime Protestors": {
         "jp": "戦時の抗議者",
@@ -1310,7 +1310,7 @@ const MASTER_CARD_DATA = {
         "type": "クリーチャー --- 人間(Human)・レベル(Rebel)・同盟者(Ally)",
         "fileName": "戦時の抗議者.png",
         "tier": "B",
-        "wr": "59.1%"
+        "wr": "59.0%"
     },
     "Yuyan Archers": {
         "jp": "ユーヤン弓矢隊",
@@ -1318,7 +1318,7 @@ const MASTER_CARD_DATA = {
         "type": "クリーチャー --- 人間(Human)・射手(Archer)",
         "fileName": "ユーヤン弓矢隊.png",
         "tier": "C+",
-        "wr": "56.9%"
+        "wr": "56.8%"
     },
     "Zhao, the Moon Slayer": {
         "jp": "月殺し、ジャオ",
@@ -1326,7 +1326,7 @@ const MASTER_CARD_DATA = {
         "type": "伝説のクリーチャー --- 人間(Human)・兵士(Soldier)",
         "fileName": "月殺し、ジャオ.png",
         "tier": "D",
-        "wr": "51.8%"
+        "wr": "51.9%"
     },
     "Zuko, Exiled Prince": {
         "jp": "追放されし王子、ズーコ",
@@ -1334,7 +1334,7 @@ const MASTER_CARD_DATA = {
         "type": "伝説のクリーチャー --- 人間(Human)・貴族(Noble)",
         "fileName": "追放されし王子、ズーコ.png",
         "tier": "D",
-        "wr": "52.3%"
+        "wr": "52.2%"
     },
     "Allies at Last": {
         "jp": "ついに仲間に",
@@ -1350,7 +1350,7 @@ const MASTER_CARD_DATA = {
         "type": "エンチャント --- オーラ(Aura)",
         "fileName": "アバターの宿命.png",
         "tier": "F",
-        "wr": "47.3%"
+        "wr": "47.0%"
     },
     "Badgermole": {
         "jp": "アナグマモグラ",
@@ -1366,7 +1366,7 @@ const MASTER_CARD_DATA = {
         "type": "クリーチャー --- アナグマ(Badger)・モグラ(Mole)",
         "fileName": "アナグマモグラの仔.png",
         "tier": "A",
-        "wr": "63.5%"
+        "wr": "63.3%"
     },
     "The Boulder, Ready to Rumble": {
         "jp": "武道会への気合充分、ボルダー",
@@ -1381,8 +1381,8 @@ const MASTER_CARD_DATA = {
         "cost": "(５)(G)",
         "type": "伝説のクリーチャー --- 人間(Human)・貴族(Noble)・同盟者(Ally)",
         "fileName": "三つの難問の王、ブミ.png",
-        "tier": "C-",
-        "wr": "53.7%"
+        "tier": "D+",
+        "wr": "53.6%"
     },
     "Cycle of Renewal": {
         "jp": "再生のサイクル",
@@ -1406,7 +1406,7 @@ const MASTER_CARD_DATA = {
         "type": "伝説のクリーチャー --- 人間(Human)・貴族(Noble)・同盟者(Ally)",
         "fileName": "土の王.png",
         "tier": "A+",
-        "wr": "64.3%"
+        "wr": "64.5%"
     },
     "Earth Kingdom General": {
         "jp": "土の王国の将軍",
@@ -1414,7 +1414,7 @@ const MASTER_CARD_DATA = {
         "type": "クリーチャー --- 人間(Human)・兵士(Soldier)・同盟者(Ally)",
         "fileName": "土の王国の将軍.png",
         "tier": "C+",
-        "wr": "56.3%"
+        "wr": "56.4%"
     },
     "Earth Rumble": {
         "jp": "土の武道会",
@@ -1422,7 +1422,7 @@ const MASTER_CARD_DATA = {
         "type": "ソーサリー",
         "fileName": "土の武道会.png",
         "tier": "C-",
-        "wr": "54.2%"
+        "wr": "53.8%"
     },
     "Earthbender Ascension": {
         "jp": "土のベンダーの位に至る",
@@ -1430,7 +1430,7 @@ const MASTER_CARD_DATA = {
         "type": "エンチャント",
         "fileName": "土のベンダーの位に至る.png",
         "tier": "A",
-        "wr": "62.6%"
+        "wr": "62.8%"
     },
     "Earthbending Lesson": {
         "jp": "土の技の修行",
@@ -1438,15 +1438,15 @@ const MASTER_CARD_DATA = {
         "type": "ソーサリー --- 講義(Lesson)",
         "fileName": "土の技の修行.png",
         "tier": "D",
-        "wr": "51.7%"
+        "wr": "51.8%"
     },
     "Earthen Ally": {
         "jp": "土の味方",
         "cost": "(G)",
         "type": "クリーチャー --- 人間(Human)・兵士(Soldier)・同盟者(Ally)",
         "fileName": "土の味方.png",
-        "tier": "C",
-        "wr": "55.1%"
+        "tier": "C-",
+        "wr": "54.9%"
     },
     "Elemental Teachings": {
         "jp": "根源の教え",
@@ -1462,7 +1462,7 @@ const MASTER_CARD_DATA = {
         "type": "伝説のクリーチャー --- 類人猿(Ape)・ヤギ(Goat)",
         "fileName": "ブミのペット、フロプシー.png",
         "tier": "C",
-        "wr": "55.2%"
+        "wr": "55.1%"
     },
     "Foggy Swamp Vinebender": {
         "jp": "霧の沼地の蔦のベンダー",
@@ -1470,7 +1470,7 @@ const MASTER_CARD_DATA = {
         "type": "クリーチャー --- 人間(Human)・植物(Plant)・同盟者(Ally)",
         "fileName": "霧の沼地の蔦のベンダー.png",
         "tier": "D",
-        "wr": "51.8%"
+        "wr": "52.1%"
     },
     "Great Divide Guide": {
         "jp": "万里の渓谷の案内人",
@@ -1486,7 +1486,7 @@ const MASTER_CARD_DATA = {
         "type": "伝説のクリーチャー --- 人間(Human)・農民(Peasant)・同盟者(Ally)",
         "fileName": "秘められた才能、ハル.png",
         "tier": "D+",
-        "wr": "53.6%"
+        "wr": "53.3%"
     },
     "Invasion Tactics": {
         "jp": "侵略作戦",
@@ -1494,7 +1494,7 @@ const MASTER_CARD_DATA = {
         "type": "エンチャント",
         "fileName": "侵略作戦.png",
         "tier": "D-",
-        "wr": "50.5%"
+        "wr": "50.3%"
     },
     "Kyoshi Island Plaza": {
         "jp": "キヨシ島の広場",
@@ -1502,7 +1502,7 @@ const MASTER_CARD_DATA = {
         "type": "伝説のエンチャント --- 祭殿(Shrine)",
         "fileName": "キヨシ島の広場.png",
         "tier": "F",
-        "wr": "49.8%"
+        "wr": "49.7%"
     },
     "Leaves from the Vine": {
         "jp": "舞い落ちる蔦の葉よ",
@@ -1517,8 +1517,8 @@ const MASTER_CARD_DATA = {
         "cost": "(４)(G)(G)",
         "type": "エンチャント --- 英雄譚(Saga)",
         "fileName": "キヨシの伝説.png",
-        "tier": "B-",
-        "wr": "58.6%"
+        "tier": "B",
+        "wr": "59.0%"
     },
     "Avatar Kyoshi": {
         "jp": "アバター・キヨシ",
@@ -1534,7 +1534,7 @@ const MASTER_CARD_DATA = {
         "type": "インスタント --- 講義(Lesson)",
         "fileName": "金属の技の原点.png",
         "tier": "C",
-        "wr": "55.4%"
+        "wr": "55.5%"
     },
     "Ostrich-Horse": {
         "jp": "ダチョウウマ",
@@ -1542,7 +1542,7 @@ const MASTER_CARD_DATA = {
         "type": "クリーチャー --- 鳥(Bird)・馬(Horse)",
         "fileName": "ダチョウウマ.png",
         "tier": "C+",
-        "wr": "56.7%"
+        "wr": "56.8%"
     },
     "Pillar Launch": {
         "jp": "石塔での打ち上げ",
@@ -1550,7 +1550,7 @@ const MASTER_CARD_DATA = {
         "type": "インスタント",
         "fileName": "石塔での打ち上げ.png",
         "tier": "C+",
-        "wr": "56.6%"
+        "wr": "56.3%"
     },
     "Raucous Audience": {
         "jp": "騒々しい観客",
@@ -1558,7 +1558,7 @@ const MASTER_CARD_DATA = {
         "type": "クリーチャー --- 人間(Human)・市民(Citizen)",
         "fileName": "騒々しい観客.png",
         "tier": "C+",
-        "wr": "56.2%"
+        "wr": "56.5%"
     },
     "Rebellious Captives": {
         "jp": "抗う囚人たち",
@@ -1566,7 +1566,7 @@ const MASTER_CARD_DATA = {
         "type": "クリーチャー --- 人間(Human)・農民(Peasant)・同盟者(Ally)",
         "fileName": "抗う囚人たち.png",
         "tier": "C-",
-        "wr": "54.9%"
+        "wr": "54.8%"
     },
     "Rockalanche": {
         "jp": "岩雪崩",
@@ -1574,7 +1574,7 @@ const MASTER_CARD_DATA = {
         "type": "ソーサリー --- 講義(Lesson)",
         "fileName": "岩雪崩.png",
         "tier": "C-",
-        "wr": "54.7%"
+        "wr": "54.8%"
     },
     "Rocky Rebuke": {
         "jp": "岩の叱責",
@@ -1582,7 +1582,7 @@ const MASTER_CARD_DATA = {
         "type": "インスタント",
         "fileName": "岩の叱責.png",
         "tier": "C",
-        "wr": "55.9%"
+        "wr": "56.1%"
     },
     "Saber-Tooth Moose-Lion": {
         "jp": "キバヘラジカライオン",
@@ -1590,7 +1590,7 @@ const MASTER_CARD_DATA = {
         "type": "クリーチャー --- 大鹿(Elk)・猫(Cat)",
         "fileName": "キバヘラジカライオン.png",
         "tier": "D+",
-        "wr": "52.8%"
+        "wr": "52.7%"
     },
     "Seismic Sense": {
         "jp": "震動感覚",
@@ -1598,7 +1598,7 @@ const MASTER_CARD_DATA = {
         "type": "ソーサリー --- 講義(Lesson)",
         "fileName": "震動感覚.png",
         "tier": "C",
-        "wr": "55.2%"
+        "wr": "55.4%"
     },
     "Shared Roots": {
         "jp": "一繋がりの根",
@@ -1606,7 +1606,7 @@ const MASTER_CARD_DATA = {
         "type": "ソーサリー --- 講義(Lesson)",
         "fileName": "一繋がりの根.png",
         "tier": "C-",
-        "wr": "54.2%"
+        "wr": "54.3%"
     },
     "Sparring Dummy": {
         "jp": "演習のカカシ",
@@ -1614,7 +1614,7 @@ const MASTER_CARD_DATA = {
         "type": "アーティファクト・クリーチャー --- カカシ(Scarecrow)",
         "fileName": "演習のカカシ.png",
         "tier": "D",
-        "wr": "52.0%"
+        "wr": "52.1%"
     },
     "Toph, the Blind Bandit": {
         "jp": "盲目のギャング、トフ",
@@ -1638,15 +1638,15 @@ const MASTER_CARD_DATA = {
         "type": "クリーチャー --- 海亀(Turtle)・鳥(Bird)",
         "fileName": "カメアヒル.png",
         "tier": "D+",
-        "wr": "53.6%"
+        "wr": "53.5%"
     },
     "Unlucky Cabbage Merchant": {
         "jp": "不幸なキャベツ売りの商人",
         "cost": "(１)(G)",
         "type": "クリーチャー --- 人間(Human)・市民(Citizen)",
         "fileName": "不幸なキャベツ売りの商人.png",
-        "tier": "D+",
-        "wr": "53.6%"
+        "tier": "C-",
+        "wr": "53.7%"
     },
     "Walltop Sentries": {
         "jp": "壁上の哨兵",
@@ -1654,7 +1654,7 @@ const MASTER_CARD_DATA = {
         "type": "クリーチャー --- 人間(Human)・兵士(Soldier)・同盟者(Ally)",
         "fileName": "壁上の哨兵.png",
         "tier": "C",
-        "wr": "55.0%"
+        "wr": "55.1%"
     },
     "Aang, at the Crossroads": {
         "jp": "岐路に立つアン",
@@ -1678,7 +1678,7 @@ const MASTER_CARD_DATA = {
         "type": "伝説のクリーチャー --- 人間(Human)・アバター(Avatar)・同盟者(Ally)",
         "fileName": "素早き救済者、アン.png",
         "tier": "A+",
-        "wr": "65.0%"
+        "wr": "64.9%"
     },
     "Aang and La, Ocean's Fury": {
         "jp": "大海の憤怒、アンとラー",
@@ -1702,15 +1702,15 @@ const MASTER_CARD_DATA = {
         "type": "エンチャント",
         "fileName": "気の民の遺物.png",
         "tier": "C",
-        "wr": "55.6%"
+        "wr": "55.4%"
     },
     "Avatar Aang": {
         "jp": "アバター・アン",
         "cost": "(R)(G)(W)(U)",
         "type": "伝説のクリーチャー --- 人間(Human)・アバター(Avatar)・同盟者(Ally)",
         "fileName": "アバター・アン.png",
-        "tier": "C-",
-        "wr": "53.8%"
+        "tier": "D+",
+        "wr": "53.6%"
     },
     "Aang, Master of Elements": {
         "jp": "根源の達人、アン",
@@ -1726,7 +1726,7 @@ const MASTER_CARD_DATA = {
         "type": "伝説のクリーチャー --- 人間(Human)・貴族(Noble)・ならず者(Rogue)",
         "fileName": "狡猾な簒奪者、アズーラ.png",
         "tier": "A",
-        "wr": "62.8%"
+        "wr": "62.7%"
     },
     "Beifong's Bounty Hunters": {
         "jp": "ベイフォン家の賞金稼ぎ",
@@ -1741,16 +1741,16 @@ const MASTER_CARD_DATA = {
         "cost": "(１)(R)(G)",
         "type": "エンチャント",
         "fileName": "辛い修練.png",
-        "tier": "D+",
-        "wr": "52.5%"
+        "tier": "D",
+        "wr": "52.2%"
     },
     "Bumi, Unleashed": {
         "jp": "解き放たれし王、ブミ",
         "cost": "(３)(R)(G)",
         "type": "伝説のクリーチャー --- 人間(Human)・貴族(Noble)・同盟者(Ally)",
         "fileName": "解き放たれし王、ブミ.png",
-        "tier": "A-",
-        "wr": "62.3%"
+        "tier": "A",
+        "wr": "63.0%"
     },
     "Cat-Owl": {
         "jp": "ネコフクロウ",
@@ -1758,7 +1758,7 @@ const MASTER_CARD_DATA = {
         "type": "クリーチャー --- 猫(Cat)・鳥(Bird)",
         "fileName": "ネコフクロウ.png",
         "tier": "D+",
-        "wr": "53.2%"
+        "wr": "53.1%"
     },
     "Cruel Administrator": {
         "jp": "冷酷な管理官",
@@ -1766,7 +1766,7 @@ const MASTER_CARD_DATA = {
         "type": "クリーチャー --- 人間(Human)・兵士(Soldier)",
         "fileName": "冷酷な管理官.png",
         "tier": "D",
-        "wr": "52.1%"
+        "wr": "52.0%"
     },
     "Dai Li Agents": {
         "jp": "ダイ・リーの調査官",
@@ -1774,7 +1774,7 @@ const MASTER_CARD_DATA = {
         "type": "クリーチャー --- 人間(Human)・兵士(Soldier)",
         "fileName": "ダイ・リーの調査官.png",
         "tier": "C+",
-        "wr": "56.8%"
+        "wr": "57.1%"
     },
     "Dragonfly Swarm": {
         "jp": "リュウトンボの群れ",
@@ -1798,7 +1798,7 @@ const MASTER_CARD_DATA = {
         "type": "クリーチャー --- 人間(Human)・兵士(Soldier)・同盟者(Ally)",
         "fileName": "土の将軍の副官.png",
         "tier": "B+",
-        "wr": "60.5%"
+        "wr": "60.4%"
     },
     "Earth Rumble Wrestlers": {
         "jp": "土の武道会の武道家たち",
@@ -1814,15 +1814,15 @@ const MASTER_CARD_DATA = {
         "type": "クリーチャー --- 人間(Human)・兵士(Soldier)・ならず者(Rogue)",
         "fileName": "土の村の悪漢.png",
         "tier": "D+",
-        "wr": "53.5%"
+        "wr": "53.3%"
     },
     "Fire Lord Azula": {
         "jp": "火の王アズーラ",
         "cost": "(１)(U)(B)(R)",
         "type": "伝説のクリーチャー --- 人間(Human)・貴族(Noble)",
         "fileName": "火の王アズーラ.png",
-        "tier": "D",
-        "wr": "51.2%"
+        "tier": "D-",
+        "wr": "50.9%"
     },
     "Fire Lord Zuko": {
         "jp": "火の王ズーコ",
@@ -1830,7 +1830,7 @@ const MASTER_CARD_DATA = {
         "type": "伝説のクリーチャー --- 人間(Human)・貴族(Noble)・同盟者(Ally)",
         "fileName": "火の王ズーコ.png",
         "tier": "F",
-        "wr": "47.0%"
+        "wr": "46.7%"
     },
     "Foggy Swamp Spirit Keeper": {
         "jp": "霧の沼地の精霊守",
@@ -1854,15 +1854,15 @@ const MASTER_CARD_DATA = {
         "type": "伝説のクリーチャー --- 人間(Human)・邪術師(Warlock)",
         "fileName": "血のベンダー、ハマ.png",
         "tier": "C-",
-        "wr": "54.3%"
+        "wr": "54.4%"
     },
     "Hei Bai, Spirit of Balance": {
         "jp": "均衡の精霊、ヘイバイ",
         "cost": "(２)(W/B)(W/B)",
         "type": "伝説のクリーチャー --- 熊(Bear)・スピリット(Spirit)",
         "fileName": "均衡の精霊、ヘイバイ.png",
-        "tier": "C-",
-        "wr": "53.8%"
+        "tier": "D+",
+        "wr": "53.6%"
     },
     "Hermitic Herbalist": {
         "jp": "浮世離れした薬草師",
@@ -1878,7 +1878,7 @@ const MASTER_CARD_DATA = {
         "type": "伝説のクリーチャー --- 人間(Human)・貴族(Noble)・同盟者(Ally)",
         "fileName": "名人、アイロー.png",
         "tier": "B-",
-        "wr": "58.4%"
+        "wr": "58.7%"
     },
     "Iroh, Tea Master": {
         "jp": "茶匠、アイロー",
@@ -1886,7 +1886,7 @@ const MASTER_CARD_DATA = {
         "type": "伝説のクリーチャー --- 人間(Human)・市民(Citizen)・同盟者(Ally)",
         "fileName": "茶匠、アイロー.png",
         "tier": "C+",
-        "wr": "57.1%"
+        "wr": "57.3%"
     },
     "Jet, Freedom Fighter": {
         "jp": "自由の闘士、ジェット",
@@ -1902,7 +1902,7 @@ const MASTER_CARD_DATA = {
         "type": "伝説のクリーチャー --- 人間(Human)・戦士(Warrior)・同盟者(Ally)",
         "fileName": "恐れを知らぬ者、カタラ.png",
         "tier": "D",
-        "wr": "51.7%"
+        "wr": "51.2%"
     },
     "Katara, Water Tribe's Hope": {
         "jp": "水の部族の希望、カタラ",
@@ -1910,7 +1910,7 @@ const MASTER_CARD_DATA = {
         "type": "伝説のクリーチャー --- 人間(Human)・戦士(Warrior)・同盟者(Ally)",
         "fileName": "水の部族の希望、カタラ.png",
         "tier": "A-",
-        "wr": "62.2%"
+        "wr": "62.0%"
     },
     "The Lion-Turtle": {
         "jp": "獅子亀",
@@ -1918,7 +1918,7 @@ const MASTER_CARD_DATA = {
         "type": "伝説のクリーチャー --- エルダー(Elder)・猫(Cat)・海亀(Turtle)",
         "fileName": "獅子亀.png",
         "tier": "C+",
-        "wr": "56.9%"
+        "wr": "57.3%"
     },
     "Long Feng, Grand Secretariat": {
         "jp": "首席秘書官、ロン・フェン",
@@ -1934,7 +1934,7 @@ const MASTER_CARD_DATA = {
         "type": "クリーチャー --- 鳥(Bird)・スカウト(Scout)",
         "fileName": "伝書鷹.png",
         "tier": "B-",
-        "wr": "57.6%"
+        "wr": "57.5%"
     },
     "Ozai, the Phoenix King": {
         "jp": "不死鳥王、オザイ",
@@ -1942,7 +1942,7 @@ const MASTER_CARD_DATA = {
         "type": "伝説のクリーチャー --- 人間(Human)・貴族(Noble)",
         "fileName": "不死鳥王、オザイ.png",
         "tier": "B-",
-        "wr": "58.3%"
+        "wr": "58.5%"
     },
     "Platypus-Bear": {
         "jp": "カモノハシグマ",
@@ -1950,7 +1950,7 @@ const MASTER_CARD_DATA = {
         "type": "クリーチャー --- カモノハシ(Platypus)・熊(Bear)",
         "fileName": "カモノハシグマ.png",
         "tier": "D+",
-        "wr": "53.0%"
+        "wr": "52.9%"
     },
     "Pretending Poxbearers": {
         "jp": "タコ病持ちの偽装者",
@@ -1958,7 +1958,7 @@ const MASTER_CARD_DATA = {
         "type": "クリーチャー --- 人間(Human)・市民(Citizen)・同盟者(Ally)",
         "fileName": "タコ病持ちの偽装者.png",
         "tier": "C",
-        "wr": "55.5%"
+        "wr": "55.4%"
     },
     "Professor Zei, Anthropologist": {
         "jp": "人類学者、ゼイ教授",
@@ -1966,7 +1966,7 @@ const MASTER_CARD_DATA = {
         "type": "伝説のクリーチャー --- 人間(Human)・アドバイザー(Advisor)・同盟者(Ally)",
         "fileName": "人類学者、ゼイ教授.png",
         "tier": "C",
-        "wr": "55.9%"
+        "wr": "56.1%"
     },
     "Sandbender Scavengers": {
         "jp": "砂のベンダーのあさり屋",
@@ -1990,7 +1990,7 @@ const MASTER_CARD_DATA = {
         "type": "伝説のクリーチャー --- 人間(Human)・戦士(Warrior)・同盟者(Ally)",
         "fileName": "機略縦横な戦略家、サカ.png",
         "tier": "B",
-        "wr": "59.3%"
+        "wr": "59.0%"
     },
     "Sokka, Tenacious Tactician": {
         "jp": "諦めない戦術家、サカ",
@@ -1998,7 +1998,7 @@ const MASTER_CARD_DATA = {
         "type": "伝説のクリーチャー --- 人間(Human)・戦士(Warrior)・同盟者(Ally)",
         "fileName": "諦めない戦術家、サカ.png",
         "tier": "C-",
-        "wr": "54.3%"
+        "wr": "54.5%"
     },
     "Suki, Kyoshi Warrior": {
         "jp": "キヨシの戦士、スキ",
@@ -2006,15 +2006,15 @@ const MASTER_CARD_DATA = {
         "type": "伝説のクリーチャー --- 人間(Human)・戦士(Warrior)・同盟者(Ally)",
         "fileName": "キヨシの戦士、スキ.png",
         "tier": "C",
-        "wr": "55.3%"
+        "wr": "55.4%"
     },
     "Sun Warriors": {
         "jp": "太陽の戦士たち",
         "cost": "(２)(R)(W)",
         "type": "クリーチャー --- 人間(Human)・戦士(Warrior)・同盟者(Ally)",
         "fileName": "太陽の戦士たち.png",
-        "tier": "C-",
-        "wr": "53.8%"
+        "tier": "D+",
+        "wr": "53.6%"
     },
     "Tolls of War": {
         "jp": "戦の犠牲者",
@@ -2022,7 +2022,7 @@ const MASTER_CARD_DATA = {
         "type": "エンチャント",
         "fileName": "戦の犠牲者.png",
         "tier": "B-",
-        "wr": "58.6%"
+        "wr": "58.3%"
     },
     "Toph, Hardheaded Teacher": {
         "jp": "頑固な教師、トフ",
@@ -2030,7 +2030,7 @@ const MASTER_CARD_DATA = {
         "type": "伝説のクリーチャー --- 人間(Human)・戦士(Warrior)・同盟者(Ally)",
         "fileName": "頑固な教師、トフ.png",
         "tier": "B-",
-        "wr": "58.1%"
+        "wr": "58.4%"
     },
     "Toph, the First Metalbender": {
         "jp": "最初の金属のベンダー、トフ",
@@ -2038,7 +2038,7 @@ const MASTER_CARD_DATA = {
         "type": "伝説のクリーチャー --- 人間(Human)・戦士(Warrior)・同盟者(Ally)",
         "fileName": "最初の金属のベンダー、トフ.png",
         "tier": "C",
-        "wr": "55.8%"
+        "wr": "55.4%"
     },
     "Uncle Iroh": {
         "jp": "伯父、アイロー",
@@ -2046,7 +2046,7 @@ const MASTER_CARD_DATA = {
         "type": "伝説のクリーチャー --- 人間(Human)・貴族(Noble)・同盟者(Ally)",
         "fileName": "伯父、アイロー.png",
         "tier": "D",
-        "wr": "52.3%"
+        "wr": "52.4%"
     },
     "Vindictive Warden": {
         "jp": "懲罰的な獄長",
@@ -2054,7 +2054,7 @@ const MASTER_CARD_DATA = {
         "type": "クリーチャー --- 人間(Human)・兵士(Soldier)",
         "fileName": "懲罰的な獄長.png",
         "tier": "C-",
-        "wr": "53.7%"
+        "wr": "53.8%"
     },
     "Wandering Musicians": {
         "jp": "放浪の楽士",
@@ -2062,7 +2062,7 @@ const MASTER_CARD_DATA = {
         "type": "クリーチャー --- 人間(Human)・バード(Bard)・同盟者(Ally)",
         "fileName": "放浪の楽士.png",
         "tier": "C",
-        "wr": "55.3%"
+        "wr": "55.2%"
     },
     "White Lotus Reinforcements": {
         "jp": "白蓮会の増援",
@@ -2070,7 +2070,7 @@ const MASTER_CARD_DATA = {
         "type": "クリーチャー --- 人間(Human)・兵士(Soldier)・同盟者(Ally)",
         "fileName": "白蓮会の増援.png",
         "tier": "B-",
-        "wr": "58.6%"
+        "wr": "58.1%"
     },
     "Zhao, Ruthless Admiral": {
         "jp": "無慈悲なる提督、ジャオ",
@@ -2078,7 +2078,7 @@ const MASTER_CARD_DATA = {
         "type": "伝説のクリーチャー --- 人間(Human)・兵士(Soldier)",
         "fileName": "無慈悲なる提督、ジャオ.png",
         "tier": "D-",
-        "wr": "50.6%"
+        "wr": "50.3%"
     },
     "Zuko, Conflicted": {
         "jp": "葛藤する者、ズーコ",
@@ -2086,7 +2086,7 @@ const MASTER_CARD_DATA = {
         "type": "伝説のクリーチャー --- 人間(Human)・ならず者(Rogue)",
         "fileName": "葛藤する者、ズーコ.png",
         "tier": "D-",
-        "wr": "50.6%"
+        "wr": "50.7%"
     },
     "Barrels of Blasting Jelly": {
         "jp": "爆破ゼリーの樽",
@@ -2094,7 +2094,7 @@ const MASTER_CARD_DATA = {
         "type": "アーティファクト",
         "fileName": "爆破ゼリーの樽.png",
         "tier": "C-",
-        "wr": "54.2%"
+        "wr": "54.3%"
     },
     "Bender's Waterskin": {
         "jp": "ベンダーの水袋",
@@ -2110,7 +2110,7 @@ const MASTER_CARD_DATA = {
         "type": "アーティファクト --- 機体(Vehicle)",
         "fileName": "火の国の軍船.png",
         "tier": "C+",
-        "wr": "57.2%"
+        "wr": "57.1%"
     },
     "Kyoshi Battle Fan": {
         "jp": "キヨシの鉄扇",
@@ -2118,15 +2118,15 @@ const MASTER_CARD_DATA = {
         "type": "アーティファクト --- 装備品(Equipment)",
         "fileName": "キヨシの鉄扇.png",
         "tier": "C",
-        "wr": "55.9%"
+        "wr": "55.7%"
     },
     "Meteor Sword": {
         "jp": "隕鉄剣",
         "cost": "(７)",
         "type": "アーティファクト --- 装備品(Equipment)",
         "fileName": "隕鉄剣.png",
-        "tier": "D",
-        "wr": "51.7%"
+        "tier": "D-",
+        "wr": "51.1%"
     },
     "Planetarium of Wan Shi Tong": {
         "jp": "ワン・シー・トンのプラネタリウム",
@@ -2134,7 +2134,7 @@ const MASTER_CARD_DATA = {
         "type": "伝説のアーティファクト",
         "fileName": "ワン・シー・トンのプラネタリウム.png",
         "tier": "B-",
-        "wr": "57.8%"
+        "wr": "58.0%"
     },
     "Trusty Boomerang": {
         "jp": "頼りのブーメラン",
@@ -2142,15 +2142,15 @@ const MASTER_CARD_DATA = {
         "type": "アーティファクト --- 装備品(Equipment)",
         "fileName": "頼りのブーメラン.png",
         "tier": "F",
-        "wr": "46.5%"
+        "wr": "47.2%"
     },
     "The Walls of Ba Sing Se": {
         "jp": "バーシンセーの城壁",
         "cost": "(８)",
         "type": "伝説のアーティファクト・クリーチャー --- 壁(Wall)",
         "fileName": "バーシンセーの城壁.png",
-        "tier": "U",
-        "wr": "-"
+        "tier": "F",
+        "wr": "42.1%"
     },
     "White Lotus Tile": {
         "jp": "白蓮の駒",
@@ -2166,7 +2166,7 @@ const MASTER_CARD_DATA = {
         "type": "土地",
         "fileName": "放棄された気の寺.png",
         "tier": "A-",
-        "wr": "61.8%"
+        "wr": "61.6%"
     },
     "Agna Qel'a": {
         "jp": "アグナ・ケラ",
@@ -2190,7 +2190,7 @@ const MASTER_CARD_DATA = {
         "type": "土地",
         "fileName": "バーシンセー.png",
         "tier": "B",
-        "wr": "59.2%"
+        "wr": "59.5%"
     },
     "Boiling Rock Prison": {
         "jp": "釜茹岩の牢獄",
@@ -2198,15 +2198,15 @@ const MASTER_CARD_DATA = {
         "type": "土地",
         "fileName": "釜茹岩の牢獄.png",
         "tier": "C-",
-        "wr": "54.4%"
+        "wr": "54.3%"
     },
     "Fire Nation Palace": {
         "jp": "火の国の宮殿",
         "cost": "",
         "type": "土地",
         "fileName": "火の国の宮殿.png",
-        "tier": "D",
-        "wr": "52.4%"
+        "tier": "D+",
+        "wr": "52.7%"
     },
     "Foggy Bottom Swamp": {
         "jp": "霧の沼地の最深部",
@@ -2214,7 +2214,7 @@ const MASTER_CARD_DATA = {
         "type": "土地",
         "fileName": "霧の沼地の最深部.png",
         "tier": "C-",
-        "wr": "54.6%"
+        "wr": "54.7%"
     },
     "Jasmine Dragon Tea Shop": {
         "jp": "茶屋「ジャスミンの龍」",
@@ -2222,7 +2222,7 @@ const MASTER_CARD_DATA = {
         "type": "土地",
         "fileName": "茶屋「ジャスミンの龍」.png",
         "tier": "C",
-        "wr": "55.9%"
+        "wr": "55.8%"
     },
     "Kyoshi Village": {
         "jp": "キヨシ村",
@@ -2230,7 +2230,7 @@ const MASTER_CARD_DATA = {
         "type": "土地",
         "fileName": "キヨシ村.png",
         "tier": "C",
-        "wr": "55.2%"
+        "wr": "55.0%"
     },
     "Meditation Pools": {
         "jp": "瞑想の淵",
@@ -2246,7 +2246,7 @@ const MASTER_CARD_DATA = {
         "type": "土地",
         "fileName": "ミスティ・パーム・オアシス.png",
         "tier": "C",
-        "wr": "55.9%"
+        "wr": "55.8%"
     },
     "North Pole Gates": {
         "jp": "北極の門",
@@ -2254,7 +2254,7 @@ const MASTER_CARD_DATA = {
         "type": "土地",
         "fileName": "北極の門.png",
         "tier": "C+",
-        "wr": "56.4%"
+        "wr": "56.2%"
     },
     "Omashu City": {
         "jp": "オマシュの都",
@@ -2270,7 +2270,7 @@ const MASTER_CARD_DATA = {
         "type": "土地",
         "fileName": "コーの領域.png",
         "tier": "C+",
-        "wr": "57.4%"
+        "wr": "57.3%"
     },
     "Rumble Arena": {
         "jp": "武道会の闘技場",
@@ -2278,7 +2278,7 @@ const MASTER_CARD_DATA = {
         "type": "土地",
         "fileName": "武道会の闘技場.png",
         "tier": "C+",
-        "wr": "56.4%"
+        "wr": "56.5%"
     },
     "Secret Tunnel": {
         "jp": "秘密のトンネル",
@@ -2286,7 +2286,7 @@ const MASTER_CARD_DATA = {
         "type": "土地 --- 洞窟(Cave)",
         "fileName": "秘密のトンネル.png",
         "tier": "B-",
-        "wr": "58.0%"
+        "wr": "58.1%"
     },
     "Serpent's Pass": {
         "jp": "大蛇の峠",
@@ -2294,7 +2294,7 @@ const MASTER_CARD_DATA = {
         "type": "土地",
         "fileName": "大蛇の峠.png",
         "tier": "C+",
-        "wr": "56.9%"
+        "wr": "57.0%"
     },
     "Sun-Blessed Peak": {
         "jp": "太陽の祝福受けし山頂",
@@ -2302,7 +2302,7 @@ const MASTER_CARD_DATA = {
         "type": "土地",
         "fileName": "太陽の祝福受けし山頂.png",
         "tier": "C-",
-        "wr": "54.4%"
+        "wr": "54.3%"
     },
     "White Lotus Hideout": {
         "jp": "白蓮会の隠れ家",
@@ -2310,7 +2310,7 @@ const MASTER_CARD_DATA = {
         "type": "土地",
         "fileName": "白蓮会の隠れ家.png",
         "tier": "D",
-        "wr": "51.7%"
+        "wr": "52.1%"
     },
     "Plains": {
         "jp": "平地",
@@ -2781,8 +2781,8 @@ const MASTER_CARD_DATA = {
         "cost": "(８)",
         "type": "アーティファクト・クリーチャー --- 構築物(Construct)",
         "fileName": "街並みの地ならし屋.png",
-        "tier": "U",
-        "wr": "-"
+        "tier": "A+",
+        "wr": "65.9%"
     },
     "Sundial of the Infinite": {
         "jp": "無限の日時計",
